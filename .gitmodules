@@ -7,3 +7,18 @@
 [submodule "contracts"]
 	path = contracts
 	url = https://github.com/balena-io/contracts.git
+[submodule "layers/meta-ked-bsp"]
+	path = layers/meta-ked-bsp
+	url = https://git.kontron-electronics.de/sw/ked/meta-ked-bsp.git
+[submodule "layers/poky"]
+	path = layers/poky
+	url = https://github.com/balena-os/poky
+	branch = kirkstone
+[submodule "layers/meta-openembedded"]
+	path = layers/meta-openembedded
+	url = https://github.com/openembedded/meta-openembedded
+	branch = kirkstone
+[submodule "layers/meta-freescale"]
+	path = layers/meta-freescale
+	url = https://git.yoctoproject.org/git/meta-freescale
+	branch = kirkstone
