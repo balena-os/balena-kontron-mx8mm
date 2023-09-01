@@ -23,6 +23,8 @@ module.exports =
 	# 	osx: 'https://www.balena.io/docs/learn/getting-started/kontron-mx8mm/nodejs/'
 	# 	linux: 'https://www.balena.io/docs/learn/getting-started/kontron-mx8mm/nodejs/'
 
+	supportsBlink: false
+
 	options: [ networkOptions.group ]
 
 	yocto:
