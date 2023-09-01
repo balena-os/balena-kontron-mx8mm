@@ -1,8 +1,5 @@
 # Supported machines
-# TODO NIELS: define the supported machines for this repo
-#MACHINE ?= "radxa-cm3-io-rk3566"
-#MACHINE ?= "radxa-zero-s905y2"
-#MACHINE ?= "rockpi-4b-rk3399"
+#MACHINE ?= "kontron-mx8mm"
 
 BALENA_STORAGE = "overlay2"
 
@@ -48,7 +45,7 @@ DISTRO ?= "resin-systemd"
 RM_OLD_IMAGE = "1"
 
 # Additional image features
-USER_CLASSES ?= "buildstats image-mklibs image-prelink"
+USER_CLASSES ?= "buildstats"
 
 # By default disable interactive patch resolution (tasks will just fail instead):
 PATCHRESOLVE = "noop"
@@ -62,6 +59,8 @@ BB_DISKMON_DIRS = "\
     ABORT,${DL_DIR},100M,1K \
     ABORT,${SSTATE_DIR},100M,1K"
 
-CONF_VERSION = "1"
+CONF_VERSION = "2"
 
 HOSTTOOLS += "docker iptables"
+
+ACCEPT_FSL_EULA = "1"
