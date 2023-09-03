@@ -1,5 +1,5 @@
 # Add flash.bin to the boot partition
-ALENA_BOOT_PARTITION_FILES_kontron-mx8mm = " \
+BALENA_BOOT_PARTITION_FILES_kontron-mx8mm = " \
     flash.bin:/boot.bin \
 "
 
