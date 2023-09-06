@@ -6,7 +6,7 @@ module.exports =
 	slug: 'kontron-mx8mm'
 	aliases: [ 'kontron-mx8mm' ]
 	name: 'Kontron MX8MM'
-	arch: 'armv7hf'
+	arch: 'aarch64'
 	state: 'released'
 	isDefault: true
 
