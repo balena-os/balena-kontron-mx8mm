@@ -1,6 +1,6 @@
 # Add flash.bin to the boot partition
-BALENA_BOOT_PARTITION_FILES_kontron-mx8mm = " \
-    flash.bin:/boot.bin \
+BALENA_BOOT_PARTITION_FILES:append:kontron-mx8mm = " \
+    flash.bin:/flash.bin \
 "
 
 # Add U-Boot in the correct location in the balenaOS image

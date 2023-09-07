@@ -1,0 +1,13 @@
+#!/bin/sh
+
+#
+# Initial flashing of u-boot to SPI NOR flash
+#
+
+set -o errexit
+
+# Erase the SPI NOR flash
+flash_erase /dev/mtd0 0 0
+
+# Write the image to the SPI NOR flash
+dd if=/mnt/boot/flash.bin of=/dev/mtd0 conv=fdatasync seek=1 bs=1k
