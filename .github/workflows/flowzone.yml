@@ -28,3 +28,7 @@ jobs:
       )
     secrets:
       GH_APP_PRIVATE_KEY: ${{ secrets.GH_APP_PRIVATE_KEY }}
+    with:
+      app_id: 782007
+      installation_id: 45784984
+      
