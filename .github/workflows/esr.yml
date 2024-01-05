@@ -21,4 +21,5 @@ jobs:
   esr:
     name: Create ESR branch and tag
     uses: balena-os/github-workflows/.github/workflows/esr.yml@master
-    secrets: inherit
+    secrets:
+      GH_APP_PRIVATE_KEY: ${{ secrets.GH_APP_PRIVATE_KEY }}
