@@ -1,6 +1,111 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v3.2.9+rev3
+## (2024-01-19)
+
+
+<details>
+<summary> Update contracts to 14a10d925b56660c59471447ca74ae324da68f79 [Self-hosted Renovate Bot] </summary>
+
+> ## contracts-2.0.90
+> ### (2024-01-10)
+> 
+> * hw.device-type: Update svg icon for seeed-j4012 [Alexandru Costache]
+> 
+> ## contracts-2.0.89
+> ### (2024-01-05)
+> 
+> * hw.device-type: Fix hyperlinks in provisioning instructions [Alexandru Costache]
+> 
+> ## contracts-2.0.88
+> ### (2024-01-03)
+> 
+> * jetson-orin-nx-seeed-j4012: Add Seeed J4012 device-type [Alexandru Costache]
+> 
+> ## contracts-2.0.87
+> ### (2023-12-29)
+> 
+> * hw.device-type: Fix device type is_private flag for imx8mp-var-dart [Florin Sarbu]
+> 
+> ## contracts-2.0.86
+> ### (2023-12-28)
+> 
+> * hw.device-type: Add Variscite DART-MX8M-PLUS [Florin Sarbu]
+> 
+> ## contracts-2.0.85
+> ### (2023-12-21)
+> 
+> * patch: Remove wiki link reference to flash Tinker Board [Vipul Gupta (@vipulgupta2048)]
+> 
+> ## contracts-2.0.84
+> ### (2023-12-13)
+> 
+> * iot-gate-imx8plus: Update flashing instructions and name [Alexandru Costache]
+> 
+> ## contracts-2.0.83
+> ### (2023-11-24)
+> 
+> * revpi-connect-4: Added contract files for revpi-connect-4 [Waqar Rashid]
+> 
+> ## contracts-2.0.82
+> ### (2023-11-22)
+> 
+> * lcbzu9: boot from internal storage [Francois Loubser]
+> 
+> ## contracts-2.0.81
+> ### (2023-10-26)
+> 
+> * hw.device-type: Add imx8mm-lpddr4-evk device [Alex J Lennon]
+> 
+> ## contracts-2.0.80
+> ### (2023-10-20)
+> 
+> * hw.device-type: Modify bluechiptechnology-tm3 [crichardson]
+> 
+> ## contracts-2.0.79
+> ### (2023-10-19)
+> 
+> * device: Add Compulab UCM-iMX93 [Alexandru Costache]
+> 
+> ## contracts-2.0.78
+> ### (2023-10-19)
+> 
+> * hw.device-type: Modify bluechiptechnology-tm3 [crichardson]
+> 
+> ## contracts-2.0.77
+> ### (2023-10-09)
+> 
+> * hw.device-type: Add bluechiptechnology-tm3 [crichardson]
+> 
+> ## contracts-2.0.76
+> ### (2023-10-02)
+> 
+> * hw.device-type: Add Eurotec Lowpad lcbzu9 device [Francois Loubser]
+> 
+> ## contracts-2.0.75
+> ### (2023-09-28)
+> 
+> * raspberrypi5: remove reference to 64bits in display name [Alex Gonzalez]
+> 
+> ## contracts-2.0.74
+> ### (2023-09-28)
+> 
+> * raspberrypi5: Explicitly flag as public for the switch to apply [Alex Gonzalez]
+> 
+> ## contracts-2.0.73
+> ### (2023-09-28)
+> 
+> * raspberrypi5: Add new device type [Florin Sarbu]
+> 
+> ## contracts-2.0.72
+> ### (2023-09-04)
+> 
+> * raspberrypi4-unipi-neuron: Add new device type [Florin Sarbu]
+> 
+
+</details>
+
 # v3.2.9+rev2
 ## (2024-01-19)
 
