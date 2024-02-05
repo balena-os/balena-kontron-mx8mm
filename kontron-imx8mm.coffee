@@ -3,9 +3,9 @@ deviceTypesCommon = require '@resin.io/device-types/common'
 
 module.exports =
 	version: 1
-	slug: 'kontron-mx8mm'
-	aliases: [ 'kontron-mx8mm' ]
-	name: 'Kontron MX8MM'
+	slug: 'kontron-imx8mm'
+	aliases: []
+	name: 'Kontron AL.iMX8M-Mini'
 	arch: 'aarch64'
 	state: 'released'
 	isDefault: true
@@ -19,20 +19,20 @@ module.exports =
 
 	instructions: commonImg.instructions
 	# gettingStartedLink:
-	# 	windows: 'https://www.balena.io/docs/learn/getting-started/kontron-mx8mm/nodejs/'
-	# 	osx: 'https://www.balena.io/docs/learn/getting-started/kontron-mx8mm/nodejs/'
-	# 	linux: 'https://www.balena.io/docs/learn/getting-started/kontron-mx8mm/nodejs/'
+	# 	windows: 'https://www.balena.io/docs/learn/getting-started/kontron-imx8mm/nodejs/'
+	# 	osx: 'https://www.balena.io/docs/learn/getting-started/kontron-imx8mm/nodejs/'
+	# 	linux: 'https://www.balena.io/docs/learn/getting-started/kontron-imx8mm/nodejs/'
 
 	supportsBlink: false
 
 	options: [ networkOptions.group ]
 
 	yocto:
-		machine: 'kontron-mx8mm'
+		machine: 'kontron-imx8mm'
 		image: 'balena-image'
 		fstype: 'balenaos-img'
 		version: 'yocto-kirkstone'
-		deployArtifact: 'balena-image-kontron-mx8mm.balenaos-img'
+		deployArtifact: 'balena-image-kontron-imx8mm.balenaos-img'
 		compressed: true
 
 	configuration:

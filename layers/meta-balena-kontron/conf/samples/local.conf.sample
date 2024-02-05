@@ -1,5 +1,5 @@
 # Supported machines
-#MACHINE ?= "kontron-mx8mm"
+#MACHINE ?= "kontron-imx8mm"
 
 BALENA_STORAGE = "overlay2"
 
