@@ -1,4 +1,20 @@
 - commits:
+    - subject: Changed name in coffee file from MX8MM to i.MX8M Mini
+      hash: 7285a71df378e9e5d3f1eff5764a07093c1948b4
+      body: >
+        In the kontron-mx8mm.coffee file changed the module.exports name to
+        i.MX8M Mini and removed the alias.
+      footer:
+        Changelog-entry: Changed name in coffee file from MX8MM to i.MX8M Mini
+        changelog-entry: Changed name in coffee file from MX8MM to i.MX8M Mini
+        Signed-off-by: joris-bright <joris@bright-energy.eu>
+        signed-off-by: joris-bright <joris@bright-energy.eu>
+      author: joris-bright
+      nested: []
+  version: 5.1.26+rev5
+  title: ""
+  date: 2024-02-09T13:10:56.480Z
+- commits:
     - subject: Update layers/meta-openembedded to
         8609de00952d65bb813a48c535c937324efeb18a
       hash: 1fc2e046bae528c9144a25f653144a573d22a7bc

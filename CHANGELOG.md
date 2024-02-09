@@ -1,6 +1,11 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v5.1.26+rev5
+## (2024-02-09)
+
+* Changed name in coffee file from MX8MM to i.MX8M Mini [joris-bright]
+
 # v5.1.26+rev4
 ## (2024-02-08)
 
