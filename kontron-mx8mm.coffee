@@ -4,8 +4,8 @@ deviceTypesCommon = require '@resin.io/device-types/common'
 module.exports =
 	version: 1
 	slug: 'kontron-mx8mm'
-	aliases: [ 'kontron-mx8mm' ]
-	name: 'Kontron MX8MM'
+	aliases: [ ]
+	name: 'Kontron i.MX8M Mini'
 	arch: 'aarch64'
 	state: 'released'
 	isDefault: true
