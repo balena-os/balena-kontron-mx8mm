@@ -1,4 +1,18 @@
 - commits:
+    - subject: "kontron-mx8mm.coffee: Switch to flasher type"
+      hash: 9bd698eb50c17d2502c484ecd0a657771214a814
+      body: ""
+      footer:
+        Changelog-entry: "kontron-mx8mm.coffee: Switch to flasher type"
+        changelog-entry: "kontron-mx8mm.coffee: Switch to flasher type"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru
+      nested: []
+  version: 5.1.34+rev1
+  title: ""
+  date: 2024-02-19T16:25:17.270Z
+- commits:
     - subject: Update layers/meta-balena to b72d2791eb6b8e7a8fbb7b25cc43649a6c5cc281
       hash: 4ac35efe41413d15486b5ed6aa415f26e8e19535
       body: Update layers/meta-balena

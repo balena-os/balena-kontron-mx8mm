@@ -1,6 +1,11 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v5.1.34+rev1
+## (2024-02-19)
+
+* kontron-mx8mm.coffee: Switch to flasher type [Alexandru]
+
 # v5.1.34
 ## (2024-02-15)
 
