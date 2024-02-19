@@ -29,10 +29,10 @@ module.exports =
 
 	yocto:
 		machine: 'kontron-mx8mm'
-		image: 'balena-image'
+		image: 'balena-image-flasher'
 		fstype: 'balenaos-img'
 		version: 'yocto-kirkstone'
-		deployArtifact: 'balena-image-kontron-mx8mm.balenaos-img'
+		deployArtifact: 'balena-image-flasher-kontron-mx8mm.balenaos-img'
 		compressed: true
 
 	configuration:
