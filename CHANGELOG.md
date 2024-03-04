@@ -1,6 +1,48 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v5.1.47
+## (2024-03-04)
+
+
+<details>
+<summary> Update layers/meta-balena to 6accf97a7c0276a78d47b8d5fa93c515f31d24c2 [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-5.1.47
+> ### (2024-03-03)
+> 
+> * classes: kernel-balena: fix secureboot append [Alex Gonzalez]
+> * classes: kernel-balena: correct dmcrypt dependencies [Alex Gonzalez]
+> * classes: kernel-balena: separate kexec configuration [Alex Gonzalez]
+> * kernel-balena: remove EFI specific settings [Alex Gonzalez]
+> * kernel-balena: separate EFI specific secure boot configurations [Alex Gonzalez]
+> * kernel-balena: remove deprecated kernel configuration [Alex Gonzalez]
+> * kernel-balena: add nfsd kernel setting [Alex Gonzalez]
+> 
+> ## meta-balena-5.1.46
+> ### (2024-03-02)
+> 
+> * resin_update_state_probe: ignore RAID members when looking for root [Michal Toman]
+> 
+> ## meta-balena-5.1.45
+> ### (2024-02-29)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 2b34fec [Self-hosted Renovate Bot] </summary>
+> 
+>> ### leviathan-2.29.63
+>> #### (2024-02-27)
+>> 
+>> * Update core/contracts digest to f3ba2ee [Self-hosted Renovate Bot]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v5.1.44
 ## (2024-02-29)
 
