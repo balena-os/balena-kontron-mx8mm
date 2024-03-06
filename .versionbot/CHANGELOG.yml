@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/poky to b3e316e8486e5462c3c71a9c8248779a5c253385
+      hash: 280d82af5c7af28f6e9caf94fc7a21a10d6a2939
+      body: Update layers/poky
+      footer:
+        Changelog-entry: Update layers/poky to b3e316e8486e5462c3c71a9c8248779a5c253385
+        changelog-entry: Update layers/poky to b3e316e8486e5462c3c71a9c8248779a5c253385
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 5.1.47+rev2
+  title: ""
+  date: 2024-03-06T03:31:07.911Z
+- commits:
     - subject: pass input parameters to common esr workflow
       hash: c321766b970552263522a1c4439754dd80f76980
       body: ""
