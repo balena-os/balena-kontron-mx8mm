@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 775e16968edc4c3803834bc524687ae4316ab6e4
+      hash: e7d84d3e9a64dc6cf98616433a464dab032ff254
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 775e16968edc4c3803834bc524687ae4316ab6e4
+        changelog-entry: Update balena-yocto-scripts to 775e16968edc4c3803834bc524687ae4316ab6e4
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Merge AMI publishing dependencies into yocto-build-env
+              hash: c208a885e849b1b49231de31268a482344220d38
+              body: |
+                This allows us to build and publish fewer helper images.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.21.5
+          title: ""
+          date: 2024-03-14T19:05:22.682Z
+  version: 5.1.52+rev3
+  title: ""
+  date: 2024-03-14T23:57:02.151Z
+- commits:
     - subject: Update layers/poky to 6d1a878bbf24c66f7186b270f823fcdf82e35383
       hash: 59002c836024b801a1e19198b51bdd104f59ec18
       body: Update layers/poky
