@@ -1,4 +1,67 @@
 - commits:
+    - subject: Update layers/meta-balena to 2cef02167e0e780d1e96da0f801f1f4d5e27e79f
+      hash: 0bce96a0909e8e21f0115078fbe62bf012976568
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 2cef02167e0e780d1e96da0f801f1f4d5e27e79f
+        changelog-entry: Update layers/meta-balena to 2cef02167e0e780d1e96da0f801f1f4d5e27e79f
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "mkfs-hostapp-native: Disable iptables features in yocto balena daemon"
+              hash: 1e563863caf75fc88a8e7c7f2ab15f65ad21ebe8
+              body: >
+                We don't need any iptables features in order to perform
+
+                hostapp-update in this build recipe, and it has no impact
+
+                on build output.
+
+
+                It does, however, improve compatbility with build environments
+                and
+
+                reduces the dependencies of the build host kernel.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-5.1.54
+          title: ""
+          date: 2024-03-13T06:45:02.830Z
+        - commits:
+            - subject: Update balena-supervisor to v16.1.5
+              hash: b15d808d021e647afc8c4da22f64dc9e7c929310
+              body: |
+                Update balena-supervisor from 16.1.4 to 16.1.5
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update fatrw to v0.2.21
+                      hash: 772702793c3ebf9bf3ac8119934436f2caa44bef
+                      body: |
+                        Update fatrw from 0.2.9 to 0.2.21
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Felipe Lalanne
+                      nested: []
+                  version: balena-supervisor-16.1.5
+                  title: ""
+                  date: 2024-03-12T13:33:05.116Z
+          version: meta-balena-5.1.53
+          title: ""
+          date: 2024-03-12T18:48:47.631Z
+  version: 5.1.54
+  title: ""
+  date: 2024-03-15T03:58:22.281Z
+- commits:
     - subject: Update balena-yocto-scripts to 775e16968edc4c3803834bc524687ae4316ab6e4
       hash: e7d84d3e9a64dc6cf98616433a464dab032ff254
       body: Update balena-yocto-scripts
