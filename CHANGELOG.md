@@ -1,6 +1,38 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v5.2.4+rev2
+## (2024-04-10)
+
+
+<details>
+<summary> Update contracts to 619554d6126d299a8349a065e49bcdbe855f3293 [Self-hosted Renovate Bot] </summary>
+
+> ## contracts-2.0.101
+> ### (2024-04-10)
+> 
+> * Remove outdated jdk & jre 8 [Thodoris Greasidis]
+> * Remove python 3.7.16 since it's in EOL [Thodoris Greasidis]
+> * Remove node v14 & v16 since they are EOL [Thodoris Greasidis]
+> 
+> ## contracts-2.0.100
+> ### (2024-04-08)
+> 
+> * Add Advantech ECU1370 to hardware contract. [Lisandro Pérez Meyer]
+> 
+> ## contracts-2.0.99
+> ### (2024-04-07)
+> 
+> * Add node v20.12.0 for debian [Thodoris Greasidis]
+> 
+> ## contracts-2.0.98
+> ### (2024-03-26)
+> 
+> * hw.device-type: Add bluechiptechnology-db1 [crichardson]
+> 
+
+</details>
+
 # v5.2.4+rev1
 ## (2024-04-06)
 
