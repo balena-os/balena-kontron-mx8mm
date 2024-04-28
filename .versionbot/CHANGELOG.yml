@@ -1,4 +1,27 @@
 - commits:
+    - subject: Update layers/meta-openembedded to
+        5a6f7925bd2b885955c942573f70a5594f231563
+      hash: 7569ef73baea8afa0bb5dfa87bf7599a8d710ece
+      body: Update layers/meta-openembedded
+      footer:
+        Changelog-entry: Update layers/meta-openembedded to
+          5a6f7925bd2b885955c942573f70a5594f231563
+        changelog-entry: Update layers/meta-openembedded to
+          5a6f7925bd2b885955c942573f70a5594f231563
+      author: Self-hosted Renovate Bot
+      nested: []
+    - subject: Update layers/meta-balena to f212a46b75701da1ad174eaca183c5b9f55075ec
+      hash: 45412ce414db8ae490731cbab46c03dd29abf55a
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to f212a46b75701da1ad174eaca183c5b9f55075ec
+        changelog-entry: Update layers/meta-balena to f212a46b75701da1ad174eaca183c5b9f55075ec
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 5.3.2
+  title: ""
+  date: 2024-04-28T21:51:45.646Z
+- commits:
     - subject: Update layers/poky to 31751bba1c789f15f574773a659b8017d7bcf440
       hash: 99d1d6193156f52ead3d3b60435750f475b92d67
       body: Update layers/poky
