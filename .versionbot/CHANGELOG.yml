@@ -1,4 +1,65 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 466d6ec592656bb950a393fc1c7a5d5ff4cf3455
+      hash: 171ca7f4b6fc027705636e77aeb5480fb0d78fb0
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 466d6ec592656bb950a393fc1c7a5d5ff4cf3455
+        changelog-entry: Update balena-yocto-scripts to 466d6ec592656bb950a393fc1c7a5d5ff4cf3455
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "balena-deploy: deploy usbboot if available"
+              hash: a62a90bcf05fdccc9cdbaa9961d2db823bbeb9b5
+              body: |
+                This is where the RPI family deploys provisioning artifacts.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.21.10
+          title: ""
+          date: 2024-05-02T09:18:16.451Z
+        - commits:
+            - subject: "balena-lib: improve base tag detection"
+              hash: 872bb3b1df920b026b524e041bf4f4f7c422cb2f
+              body: >
+                When a ESR release is deployed a tag with the base meta-balena
+                version
+
+                is created. This is used by the API to check for a valid OS
+                version
+
+                for updates.
+
+
+                The current mechanism to find the base version only provides an
+                ESR
+
+                version for the first commit after the branch has been created.
+
+
+                Using merge-base to find the common ancestor and `tag
+                --points-at` to
+
+                find the actual tag works for all commits after the branch is
+                created.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.21.9
+          title: ""
+          date: 2024-04-30T14:17:29.958Z
+  version: 5.3.3+rev1
+  title: ""
+  date: 2024-05-02T18:06:55.643Z
+- commits:
     - subject: Update layers/meta-balena to cc46d73fa73a599f744a2f06a6c6983d76a45a41
       hash: 9a38993c0f7a973729ec2c81851b41fc1eb5bc5d
       body: Update layers/meta-balena

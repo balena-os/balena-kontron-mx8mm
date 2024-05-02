@@ -1,6 +1,26 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v5.3.3+rev1
+## (2024-05-02)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 466d6ec592656bb950a393fc1c7a5d5ff4cf3455 [Self-hosted Renovate Bot] </summary>
+
+> ## balena-yocto-scripts-1.21.10
+> ### (2024-05-02)
+> 
+> * balena-deploy: deploy usbboot if available [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.21.9
+> ### (Invalid date)
+> 
+> * balena-lib: improve base tag detection [Alex Gonzalez]
+> 
+
+</details>
+
 # v5.3.3
 ## (2024-05-01)
 
