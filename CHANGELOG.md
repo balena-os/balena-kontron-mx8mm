@@ -1,6 +1,68 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v5.3.11
+## (2024-05-28)
+
+
+<details>
+<summary> Update layers/meta-balena to 15a8f82cb7722e22ba3abb6aea4e7618e133d7be [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-5.3.11
+> ### (2024-05-27)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v16.3.10 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### balena-supervisor-16.3.10
+>> #### (2024-05-27)
+>> 
+>> * Update got to v14.3.0 [Self-hosted Renovate Bot]
+>> 
+>> ### balena-supervisor-16.3.9
+>> #### (2024-05-27)
+>> 
+>> * Update balena-io/deploy-to-balena-action action to v2.0.69 [Self-hosted Renovate Bot]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-5.3.10
+> ### (2024-05-24)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v16.3.8 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### balena-supervisor-16.3.8
+>> #### (2024-05-24)
+>> 
+>> * Update balena-io/deploy-to-balena-action action to v2.0.68 [Self-hosted Renovate Bot]
+>> 
+>> ### balena-supervisor-16.3.7
+>> #### (2024-05-24)
+>> 
+>> * Update sinon to v18 [Self-hosted Renovate Bot]
+>> 
+>> ### balena-supervisor-16.3.6
+>> #### (2024-05-20)
+>> 
+>> * Update balena-io/deploy-to-balena-action action to v2.0.67 [Self-hosted Renovate Bot]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-5.3.9
+> ### (2024-05-24)
+> 
+> * NetworkManager: do not use FW rule numbers in shared dispatcher script [Michal Toman]
+> 
+
+</details>
+
 # v5.3.8+rev2
 ## (2024-05-28)
 

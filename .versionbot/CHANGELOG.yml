@@ -1,4 +1,145 @@
 - commits:
+    - subject: Update layers/meta-balena to 15a8f82cb7722e22ba3abb6aea4e7618e133d7be
+      hash: dfcd14d4da7c5a2c4820cb6933d91249697a7125
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 15a8f82cb7722e22ba3abb6aea4e7618e133d7be
+        changelog-entry: Update layers/meta-balena to 15a8f82cb7722e22ba3abb6aea4e7618e133d7be
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update balena-supervisor to v16.3.10
+              hash: a500fccd65e2cf7d31ed6730cc6fd12e0220b757
+              body: |
+                Update balena-supervisor from 16.3.8 to 16.3.10
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update got to v14.3.0
+                      hash: 4764bca2c4122a37f1f4c684e673ddca3812b4c9
+                      body: |
+                        Update got from 14.2.1 to 14.3.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: balena-supervisor-16.3.10
+                  title: ""
+                  date: 2024-05-27T02:41:46.106Z
+                - commits:
+                    - subject: Update balena-io/deploy-to-balena-action action to v2.0.69
+                      hash: 9cdb363e4cf274e5506247cc55cebef0c676de7e
+                      body: >
+                        Update balena-io/deploy-to-balena-action from 2.0.68 to
+                        2.0.69
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: balena-supervisor-16.3.9
+                  title: ""
+                  date: 2024-05-27T01:59:21.096Z
+          version: meta-balena-5.3.11
+          title: ""
+          date: 2024-05-27T06:50:02.553Z
+        - commits:
+            - subject: Update balena-supervisor to v16.3.8
+              hash: ca994c7c5d3598b0f1844e3c98bc37b756d056c6
+              body: |
+                Update balena-supervisor from 16.3.5 to 16.3.8
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update balena-io/deploy-to-balena-action action to v2.0.68
+                      hash: 8a7972c783845576741c626f7ac543671ebf868b
+                      body: >
+                        Update balena-io/deploy-to-balena-action from 2.0.67 to
+                        2.0.68
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: balena-supervisor-16.3.8
+                  title: ""
+                  date: 2024-05-24T14:29:17.821Z
+                - commits:
+                    - subject: Update sinon to v18
+                      hash: 6b47c3572dea75c161e3931f05f37c46828d90a2
+                      body: |
+                        Update sinon from 17.0.1 to 18.0.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: balena-supervisor-16.3.7
+                  title: ""
+                  date: 2024-05-24T13:45:20.892Z
+                - commits:
+                    - subject: Update balena-io/deploy-to-balena-action action to v2.0.67
+                      hash: 21f72b0ce9fd977517df3bf0ee5c186a17d432c9
+                      body: >
+                        Update balena-io/deploy-to-balena-action from 2.0.66 to
+                        2.0.67
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: balena-supervisor-16.3.6
+                  title: ""
+                  date: 2024-05-20T01:54:04.811Z
+          version: meta-balena-5.3.10
+          title: ""
+          date: 2024-05-24T22:52:04.637Z
+        - commits:
+            - subject: "NetworkManager: do not use FW rule numbers in shared dispatcher
+                script"
+              hash: ab8d61194d84045e4b74f60e4172a69dd52a3509
+              body: >
+                Manipulating the firewall rules by index introduces a race
+                condition.
+
+                Both NetworkManager and balenaEngine add the rules to the top
+
+                of the FORWARD chain instead of appending, so if we first look
+                up
+
+                a rule by number and then use the number to refer to it, we can
+                not
+
+                guarantee that the rule number has not changed (iow the rule has
+                not
+
+                been moved down) in the meantime.
+
+
+                This patch removes the use of rule numbers completely and makes
+
+                the "shared" dispatcher script refer to the rules by definition.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-5.3.9
+          title: ""
+          date: 2024-05-24T12:34:18.221Z
+  version: 5.3.11
+  title: ""
+  date: 2024-05-28T22:52:46.495Z
+- commits:
     - subject: Update layers/meta-openembedded to
         0560b848996a0feb410a8cd8ca07c60fe2f3b5bc
       hash: 7b88b64669c49a5f2760d717812793c076bde35d
