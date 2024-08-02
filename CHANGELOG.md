@@ -1,6 +1,11 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v5.3.11+rev1
+## (2024-08-02)
+
+* Update layers/meta-freescale to 4c81b4161b99698b03332842b588dd8235ac47e4 [Self-hosted Renovate Bot]
+
 # v5.3.11
 ## (2024-05-28)
 

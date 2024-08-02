@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update layers/meta-freescale to 4c81b4161b99698b03332842b588dd8235ac47e4
+      hash: f83a629f5535712147d572f4d5910fe0b9848a87
+      body: Update layers/meta-freescale
+      footer:
+        Changelog-entry: Update layers/meta-freescale to
+          4c81b4161b99698b03332842b588dd8235ac47e4
+        changelog-entry: Update layers/meta-freescale to
+          4c81b4161b99698b03332842b588dd8235ac47e4
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 5.3.11+rev1
+  title: ""
+  date: 2024-08-02T16:20:02.555Z
+- commits:
     - subject: Update layers/meta-balena to 15a8f82cb7722e22ba3abb6aea4e7618e133d7be
       hash: dfcd14d4da7c5a2c4820cb6933d91249697a7125
       body: Update layers/meta-balena
