@@ -1,4 +1,55 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 7d0bda80dd3e21bef15fe91b085fe183923c1c94
+      hash: e920b519d1a9c51744c80851120f548c3bb9cdf7
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 7d0bda80dd3e21bef15fe91b085fe183923c1c94
+        changelog-entry: Update balena-yocto-scripts to 7d0bda80dd3e21bef15fe91b085fe183923c1c94
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-os/leviathan digest to f4e9332
+              hash: 6a7097208111936aac9a8862c61d6f600d1652dd
+              body: |
+                Update balena-os/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.25.21
+          title: ""
+          date: 2024-08-06T18:50:02.588Z
+        - commits:
+            - subject: Update actions/upload-artifact action to v4.3.6
+              hash: 03b4f76a25f7c887c3c1cbae6293bce772773f6d
+              body: |
+                Update actions/upload-artifact from 4.3.5 to 4.3.6
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.25.20
+          title: ""
+          date: 2024-08-06T16:39:55.294Z
+        - commits:
+            - subject: Update balena-os/leviathan digest to a16cf0f
+              hash: f0d8fdd6add9aa34a89234491e6a82ac7583b48e
+              body: |
+                Update balena-os/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.25.19
+          title: ""
+          date: 2024-08-06T12:46:47.450Z
+  version: 6.0.6+rev4
+  title: ""
+  date: 2024-08-08T02:25:16.417Z
+- commits:
     - subject: Update layers/poky to 93ef091fb2be38866a41bf87088625fbdfb69027
       hash: 31a016929476fb096aca5e74e1132ead6c3b5f4c
       body: Update layers/poky
