@@ -1,6 +1,21 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v6.0.7
+## (2024-08-10)
+
+
+<details>
+<summary> Update layers/meta-balena to cd2ee87b79d8b8edadc424084593a4ad9b69cb4f [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.0.7
+> ### (2024-08-09)
+> 
+> * modemmanager: Fix Quectel modems initialization bug [Florin Sarbu]
+> 
+
+</details>
+
 # v6.0.6+rev6
 ## (2024-08-10)
 
