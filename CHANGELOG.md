@@ -1,6 +1,11 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v6.0.25+rev2
+## (2024-09-17)
+
+* Update .gitmodules with submodule branch information [Kyle Harding]
+
 # v6.0.25+rev1
 ## (2024-09-14)
 
