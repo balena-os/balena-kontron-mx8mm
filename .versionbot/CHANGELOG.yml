@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add GHA Built Test Deploy workflows
+      hash: 8a6916631182b483c5dfe149bfda8004dcb5db9c
+      body: ""
+      footer:
+        Changelog-entry: Add GHA Built Test Deploy workflows
+        changelog-entry: Add GHA Built Test Deploy workflows
+        Signed-off-by: Ryan Cooke <ryan@balena.io>
+        signed-off-by: Ryan Cooke <ryan@balena.io>
+      author: rcooke-warwick
+      nested: []
+  version: 6.0.33+rev1
+  title: ""
+  date: 2024-10-02T18:17:16.967Z
+- commits:
     - subject: Update layers/meta-balena to f2c72d6bbd312821f0bb97897fe7836c525950f7
       hash: c085a6479a339bddd18ce56cb0f45492d821086d
       body: Update layers/meta-balena
