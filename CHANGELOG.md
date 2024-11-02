@@ -1,6 +1,26 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v6.1.0
+## (2024-11-02)
+
+
+<details>
+<summary> Update layers/meta-balena to 26dd79ea1569ad3f365e669f3e646e21d67e9121 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.1.0
+> ### (2024-11-01)
+> 
+> * Add auth. header to /os/v1/config requests [Anton Belodedenko]
+> 
+> ## meta-balena-6.0.50
+> ### (2024-10-26)
+> 
+> * tests: secureboot: add test to ensure partition integrity [Joseph Kogut]
+> 
+
+</details>
+
 # v6.0.49+rev1
 ## (2024-11-01)
 

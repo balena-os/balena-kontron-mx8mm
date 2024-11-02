@@ -1,4 +1,48 @@
 - commits:
+    - subject: Update layers/meta-balena to 26dd79ea1569ad3f365e669f3e646e21d67e9121
+      hash: 9dd8d256870d71bc996f9dddf584ead439ab3f83
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 26dd79ea1569ad3f365e669f3e646e21d67e9121
+        changelog-entry: Update layers/meta-balena to 26dd79ea1569ad3f365e669f3e646e21d67e9121
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Add auth. header to /os/v1/config requests
+              hash: 0c35aa38fec436fa0469aaf414fbcf68d97f6b0b
+              body: >
+                Allows the API to identify devices requesting configuration and
+                apply routing logic (e.g. switch from TCP to UDP OpenVPN
+                configuration).
+              footer:
+                change-type: minor
+              author: Anton Belodedenko
+              nested: []
+          version: meta-balena-6.1.0
+          title: ""
+          date: 2024-11-01T13:53:03.607Z
+        - commits:
+            - subject: "tests: secureboot: add test to ensure partition integrity"
+              hash: 3cf94c892cd6a21f91c1c3ab7718f3feca35435f
+              body: >
+                Ensure the signed kernel aborts the boot process when partitions
+                or
+
+                filesystems have been tampered with.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-6.0.50
+          title: ""
+          date: 2024-10-26T23:12:59.729Z
+  version: 6.1.0
+  title: ""
+  date: 2024-11-02T03:38:47.656Z
+- commits:
     - subject: Update balena-yocto-scripts to 2ff723d53fd6bf40b4e161e74c7e94aa26034b03
       hash: 5097835f68e2b4d860ff3615a3b6fb999a9edf06
       body: Update balena-yocto-scripts
