@@ -1,6 +1,36 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v6.1.0+rev4
+## (2024-11-05)
+
+
+<details>
+<summary> Update balena-yocto-scripts to d8d6b50ec334769cfc000ef8b619cfb35a5a65d5 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.27.8
+> ### (2024-11-04)
+> 
+> * Update product-os/review-commit-action action to v0.1.7 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.27.7
+> ### (2024-11-04)
+> 
+> * Update Pin product-os/review-commit-action action to 81db18c [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.27.6
+> ### (2024-11-04)
+> 
+> * Use official aws cli binaries and commands [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.27.5
+> ### (2024-11-04)
+> 
+> * Update Lock file maintenance [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.1.0+rev3
 ## (2024-11-04)
 
