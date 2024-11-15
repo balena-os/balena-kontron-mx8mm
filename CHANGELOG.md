@@ -1,6 +1,31 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v6.1.8
+## (2024-11-15)
+
+
+<details>
+<summary> Update layers/meta-balena to b54108c60a91e6a0cabf3b7e7f69e29d22963b0f [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.1.8
+> ### (2024-11-15)
+> 
+> * recipes-kernel/linux-firmware: Package Intel AX210 firmware [Alexandru Costache]
+> 
+> ## meta-balena-6.1.7
+> ### (2024-11-13)
+> 
+> * Update actions/checkout digest to 11bd719 [balena-renovate[bot]]
+> 
+> ## meta-balena-6.1.6
+> ### (2024-11-13)
+> 
+> * Update balena-os/balena-yocto-scripts action to v1.27.10 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.1.5
 ## (2024-11-13)
 

@@ -1,4 +1,59 @@
 - commits:
+    - subject: Update layers/meta-balena to b54108c60a91e6a0cabf3b7e7f69e29d22963b0f
+      hash: 4e6e35c051bb741c6a1ac81cbc6788b8b501781a
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to b54108c60a91e6a0cabf3b7e7f69e29d22963b0f
+        changelog-entry: Update layers/meta-balena to b54108c60a91e6a0cabf3b7e7f69e29d22963b0f
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "recipes-kernel/linux-firmware: Package Intel AX210 firmware"
+              hash: 2ca4f0ebd247db9981d1c488327960cbde9d0e46
+              body: |
+                This was requested for the AGX Orin 64GB devkit image,
+                and will be included from the device repository.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-6.1.8
+          title: ""
+          date: 2024-11-15T11:29:41.983Z
+        - commits:
+            - subject: Update actions/checkout digest to 11bd719
+              hash: a4da39b99f863a49ce9aa608383c7ddf45300b3d
+              body: >
+                Update actions/checkout to
+                11bd71901bbe5b1630ceea73d27597364c9af683
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: meta-balena-6.1.7
+          title: ""
+          date: 2024-11-13T22:30:24.613Z
+        - commits:
+            - subject: Update balena-os/balena-yocto-scripts action to v1.27.10
+              hash: 18b6a519955e8e66e51948adcd6a6e4ec70c0779
+              body: |
+                Update balena-os/balena-yocto-scripts from v1.25.59 to v1.27.10
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: meta-balena-6.1.6
+          title: ""
+          date: 2024-11-13T19:27:40.260Z
+  version: 6.1.8
+  title: ""
+  date: 2024-11-15T14:13:14.574Z
+- commits:
     - subject: Update layers/meta-balena to a0f8d0f174767b9e69f35ba3ae7e142c4463d7bf
       hash: 04c684b7e40ed175d0618a448b71da7d5ab8d2e2
       body: Update layers/meta-balena
