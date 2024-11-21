@@ -1,6 +1,31 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v6.1.12+rev2
+## (2024-11-21)
+
+
+<details>
+<summary> Update balena-yocto-scripts to f170ea86c0476f46e0144528bcc1387c9da07e11 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.27.14
+> ### (2024-11-20)
+> 
+> * Update balena-os/leviathan action to v2.31.62 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.27.13
+> ### (2024-11-18)
+> 
+> * Explicitly set GH_TOKEN permissions [Anton Belodedenko]
+> 
+> ## balena-yocto-scripts-1.27.12
+> ### (2024-11-18)
+> 
+> * Update Lock file maintenance [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.1.12+rev1
 ## (2024-11-21)
 
