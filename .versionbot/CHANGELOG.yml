@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update layers/meta-balena to 229a6ad1da498c4ce8aaa17501ddad3e99806f08
+      hash: f5f4385161a0fa28bf6f05d7717e4ac4f2ad3778
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 229a6ad1da498c4ce8aaa17501ddad3e99806f08
+        changelog-entry: Update layers/meta-balena to 229a6ad1da498c4ce8aaa17501ddad3e99806f08
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "classes/kernel-balena: Add aufs patches for 6.1 kernels"
+              hash: 87d1cdcd707cf90dc40a760d0307fdb1573498b4
+              body: |
+                Also, aufs5 and aufs6 patches are in the same git repo now.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-6.1.16
+          title: ""
+          date: 2024-11-27T19:50:52.083Z
+  version: 6.1.16
+  title: ""
+  date: 2024-11-27T23:54:14.539Z
+- commits:
     - subject: Update balena-yocto-scripts to 05b373abd099d1862fdff51e96b0122940505756
       hash: 5cd47940246de80df854224a2cdb7f67cee34e98
       body: Update balena-yocto-scripts
