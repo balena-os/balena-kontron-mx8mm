@@ -1,4 +1,43 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 2834c521c45650392d84513ae66a8e0ea97cada9
+      hash: 745aad106d7ddaec7bf3b4db1d5ea1dfdadd5b1d
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 2834c521c45650392d84513ae66a8e0ea97cada9
+        changelog-entry: Update balena-yocto-scripts to 2834c521c45650392d84513ae66a8e0ea97cada9
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-os/leviathan action to v2.31.70
+              hash: 6adf4bd6777747e2644800175f6b36ba996169dc
+              body: |
+                Update balena-os/leviathan from 2.31.69 to 2.31.70
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.29.2
+          title: ""
+          date: 2024-12-13T21:17:34.042Z
+        - commits:
+            - subject: re-enable AMI deploys
+              hash: 6b951a1ef76da4896e676477a8f550b3186b7e55
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: Ryan Cooke
+              nested: []
+          version: balena-yocto-scripts-1.29.1
+          title: ""
+          date: 2024-12-13T18:55:49.988Z
+  version: 6.1.17+rev5
+  title: ""
+  date: 2024-12-14T01:11:43.256Z
+- commits:
     - subject: Update balena-yocto-scripts to 242572671a2a8a98fd3cf75776c5ef49e3ceea1a
       hash: 02f5a12787cc3fc5425a98b57eff0f06a3c9b1eb
       body: Update balena-yocto-scripts
