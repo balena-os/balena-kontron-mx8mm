@@ -1,6 +1,31 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v6.1.17+rev7
+## (2024-12-16)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 7fb20a1e615ef15b9a25be51805d6f4a45d71226 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.29.5
+> ### (2024-12-16)
+> 
+> * Remove hostapp creation step [Ryan Cooke]
+> 
+> ## balena-yocto-scripts-1.29.4
+> ### (2024-12-14)
+> 
+> * Compress artifacts with gzip and zstd before encrypting [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.29.3
+> ### (2024-12-13)
+> 
+> * Update Pin dependencies [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.1.17+rev6
 ## (2024-12-16)
 
