@@ -1,4 +1,43 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 1c15d4194787879aeec7a84c22bf3dd2712f239a
+      hash: 3fbfa2b6d2551c568532bc5d73ecef26a8b59663
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 1c15d4194787879aeec7a84c22bf3dd2712f239a
+        changelog-entry: Update balena-yocto-scripts to 1c15d4194787879aeec7a84c22bf3dd2712f239a
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Unset AWS credentials to avoid overriding MinIO credentials
+              hash: 2d574e36504c57f8c0c4f9a68d5cc2a9993261f2
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.29.7
+          title: ""
+          date: 2024-12-17T19:29:24.417Z
+        - commits:
+            - subject: Update balena-os/leviathan action to v2.31.71
+              hash: 14cd7de41709395ce2c947d8edcf352f213eed01
+              body: |
+                Update balena-os/leviathan from 2.31.70 to 2.31.71
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.29.6
+          title: ""
+          date: 2024-12-17T13:20:52.856Z
+  version: 6.1.17+rev8
+  title: ""
+  date: 2024-12-17T23:11:24.134Z
+- commits:
     - subject: Update balena-yocto-scripts to 7fb20a1e615ef15b9a25be51805d6f4a45d71226
       hash: d1a7a4639444a3323ef5eca292745c462927e1c9
       body: Update balena-yocto-scripts
