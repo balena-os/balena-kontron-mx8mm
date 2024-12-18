@@ -1,6 +1,26 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v6.1.17+rev10
+## (2024-12-18)
+
+
+<details>
+<summary> Update contracts to 9383b369225a93451dcb595930106a36f5b2dc45 [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.121
+> ### (2024-12-18)
+> 
+> * hw.device-type: Fix compatibility with existing sdk structure [Alexandru Costache]
+> 
+> ## contracts-2.0.120
+> ### (2024-12-18)
+> 
+> * add eg5120-imx8mp contract [Ryan Cooke]
+> 
+
+</details>
+
 # v6.1.17+rev9
 ## (2024-12-18)
 

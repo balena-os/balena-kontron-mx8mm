@@ -1,4 +1,42 @@
 - commits:
+    - subject: Update contracts to 9383b369225a93451dcb595930106a36f5b2dc45
+      hash: dc9c79cb918c8df39984e696bf23bfa7ebdd29ca
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 9383b369225a93451dcb595930106a36f5b2dc45
+        changelog-entry: Update contracts to 9383b369225a93451dcb595930106a36f5b2dc45
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "hw.device-type: Fix compatibility with existing sdk structure"
+              hash: e234b48207f0a7e82e56fb636d2791ba2a364a68
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.121
+          title: ""
+          date: 2024-12-18T20:31:37.211Z
+        - commits:
+            - subject: add eg5120-imx8mp contract
+              hash: 272015edab63d911b6a716b43d3ef52f3c577153
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: Ryan Cooke
+          version: contracts-2.0.120
+          title: ""
+          date: 2024-12-18T12:47:37.969Z
+  version: 6.1.17+rev10
+  title: ""
+  date: 2024-12-18T23:57:55.749Z
+- commits:
     - subject: Update balena-yocto-scripts to 0553ef92485347dc2ad72638d753581cf19916a4
       hash: 987d1da8db1d47ff1f010d8008e136204c29a944
       body: Update balena-yocto-scripts
