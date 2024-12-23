@@ -1,6 +1,21 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v6.1.17+rev13
+## (2024-12-23)
+
+
+<details>
+<summary> Update contracts to 8bd56512c375e2f39b532fdb3882a7b5243f7ece [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.122
+> ### (2024-12-23)
+> 
+> * hw.device-type: add Forecr DSB ORNX entries [Alex Suykov]
+> 
+
+</details>
+
 # v6.1.17+rev12
 ## (2024-12-22)
 
