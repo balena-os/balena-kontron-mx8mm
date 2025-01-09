@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update balena-os/balena-yocto-scripts to
+        88037d34fab8609cceca65335d8c329e11c71692
+      hash: 94e6752ca55526424413b80b1a57a58f1a81d72c
+      body: Update balena-os/balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-os/balena-yocto-scripts to
+          88037d34fab8609cceca65335d8c329e11c71692
+        changelog-entry: Update balena-os/balena-yocto-scripts to
+          88037d34fab8609cceca65335d8c329e11c71692
+      author: balena-renovate[bot]
+      nested: []
+  version: 6.1.17+rev20
+  title: ""
+  date: 2025-01-09T23:15:08.911Z
+- commits:
     - subject: Update contracts to b7d2bb88f3e7ca1aca02c0da5f358aaef4308189
       hash: 2c7e6e1e09282aee04c8b93933cc78d3928d1048
       body: Update contracts
