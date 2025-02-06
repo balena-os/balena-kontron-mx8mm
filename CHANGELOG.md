@@ -1,6 +1,26 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v6.1.17+rev32
+## (2025-02-06)
+
+
+<details>
+<summary> Update balena-yocto-scripts to fa12a4dff3f9d8c2298719d7c8c4cdcce24253e1 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.30.26
+> ### (2025-02-06)
+> 
+> * Update actions/create-github-app-token action to v1.11.3 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.25
+> ### (2025-02-06)
+> 
+> * generate-oscontracts: remove sw.os-image selector [Ryan Cooke]
+> 
+
+</details>
+
 # v6.1.17+rev31
 ## (2025-02-03)
 
