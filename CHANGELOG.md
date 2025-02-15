@@ -1,6 +1,26 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v6.1.17+rev35
+## (2025-02-15)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 4246a1c0e1440417020de05f51e05941d6a83900 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.30.29
+> ### (2025-02-15)
+> 
+> * Update actions/create-github-app-token action to v1.11.5 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.28
+> ### (2025-02-11)
+> 
+> * Update aws-actions/configure-aws-credentials action to v4.1.0 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.1.17+rev34
 ## (2025-02-07)
 
