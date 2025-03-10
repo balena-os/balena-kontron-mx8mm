@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update balena-yocto-scripts to bf40474f48fdf8631160849a9a636e0d172401ca
+      hash: e61e6d625eb24ce3c4270fcac340bb4b1180284a
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to bf40474f48fdf8631160849a9a636e0d172401ca
+        changelog-entry: Update balena-yocto-scripts to bf40474f48fdf8631160849a9a636e0d172401ca
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update Lock file maintenance
+              hash: 54a3a99f0b4caa31e407da6aff704e53f10b42d6
+              body: |
+                Update 
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.31.20
+          title: ""
+          date: 2025-03-10T01:45:33.930Z
+  version: 6.1.17+rev52
+  title: ""
+  date: 2025-03-10T05:41:32.761Z
+- commits:
     - subject: Update balena-yocto-scripts to ad7dc922b335af9440a8709237b642d904a0b795
       hash: 00e9ef2a1f4fd538016a3c1a1d8fb76f0d99a9db
       body: Update balena-yocto-scripts
