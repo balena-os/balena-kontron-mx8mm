@@ -25,3 +25,6 @@
 	path = layers/meta-freescale
 	url = https://git.yoctoproject.org/git/meta-freescale
 	branch = kirkstone
+[submodule "layers/meta-ked-bootloader"]
+	path = layers/meta-ked-bootloader
+	url = https://git.kontron-electronics.de/sw/ked/meta-ked-bootloader.git
