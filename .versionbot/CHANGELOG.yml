@@ -1,4 +1,48 @@
 - commits:
+    - subject: Updated poky layer to latest commit on kirkstone branch
+      hash: bb48dc4a75ffcf96e521d5bf5ad4b206b0f300ff
+      body: ""
+      footer:
+        Changelog-entry: Updated poky layer to latest commit on kirkstone branch
+        changelog-entry: Updated poky layer to latest commit on kirkstone branch
+        Signed-off-by: vanackera <arne@bright-energy.eu>
+        signed-off-by: vanackera <arne@bright-energy.eu>
+      author: arne
+      nested: []
+    - subject: Updated meta-openembedded layer to latest commit on kirkstone branch
+      hash: 71d088bdf4917559980cca6543c46e9be5109d18
+      body: ""
+      footer:
+        Changelog-entry: Updated meta-openembedded layer to latest commit on kirkstone branch
+        changelog-entry: Updated meta-openembedded layer to latest commit on kirkstone branch
+        Signed-off-by: vanackera <arne@bright-energy.eu>
+        signed-off-by: vanackera <arne@bright-energy.eu>
+      author: arne
+      nested: []
+    - subject: Updated build information necessary for meta-ked-bootloader layer
+      hash: 4a9eaf14e28105acc606ac631441fd9929ca3db7
+      body: ""
+      footer:
+        Changelog-entry: Updated build information necessary for meta-ked-bootloader layer
+        changelog-entry: Updated build information necessary for meta-ked-bootloader layer
+        Signed-off-by: vanackera <arne@bright-energy.eu>
+        signed-off-by: vanackera <arne@bright-energy.eu>
+      author: arne
+      nested: []
+    - subject: Updated meta-ked-bsp layer to release 6.2.0
+      hash: 5a634bd814315f5c9f4c32666d14badd1b135b5b
+      body: ""
+      footer:
+        Changelog-entry: Updated meta-ked-bsp layer to release 6.2.0
+        changelog-entry: Updated meta-ked-bsp layer to release 6.2.0
+        Signed-off-by: vanackera <arne@bright-energy.eu>
+        signed-off-by: vanackera <arne@bright-energy.eu>
+      author: arne
+      nested: []
+  version: 6.1.17+rev60
+  title: ""
+  date: 2025-03-26T21:37:56.876Z
+- commits:
     - subject: Update balena-yocto-scripts to 04eb68e3db91d0824f5876a6d51aefd4fded7786
       hash: 5de50235cc248c87807cf2196ea5133c18a144f9
       body: Update balena-yocto-scripts

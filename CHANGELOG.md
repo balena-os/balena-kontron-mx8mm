@@ -1,6 +1,14 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v6.1.17+rev60
+## (2025-03-26)
+
+* Updated poky layer to latest commit on kirkstone branch [arne]
+* Updated meta-openembedded layer to latest commit on kirkstone branch [arne]
+* Updated build information necessary for meta-ked-bootloader layer [arne]
+* Updated meta-ked-bsp layer to release 6.2.0 [arne]
+
 # v6.1.17+rev59
 ## (2025-03-20)
 
