@@ -1,6 +1,11 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v6.5.4+rev2
+## (2025-03-28)
+
+* Disable renovate updates for meta-ked-bsp & meta-ked-bootloader submodules [Thodoris Greasidis]
+
 # v6.5.4+rev1
 ## (2025-03-28)
 

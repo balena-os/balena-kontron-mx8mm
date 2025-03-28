@@ -1,4 +1,19 @@
 - commits:
+    - subject: Disable renovate updates for meta-ked-bsp & meta-ked-bootloader
+        submodules
+      hash: 317b2916bef81e96a862467cfd32e44466dc6b5a
+      body: ""
+      footer:
+        Changelog-entry: Disable renovate updates for meta-ked-bsp & meta-ked-bootloader
+          submodules
+        changelog-entry: Disable renovate updates for meta-ked-bsp & meta-ked-bootloader
+          submodules
+      author: Thodoris Greasidis
+      nested: []
+  version: 6.5.4+rev2
+  title: ""
+  date: 2025-03-28T14:50:19.161Z
+- commits:
     - subject: Update balena-yocto-scripts to 997914219e3404df25c1813dc7806badd347ac84
       hash: d19819875b0d0853c87578be0df439285b244231
       body: Update balena-yocto-scripts
