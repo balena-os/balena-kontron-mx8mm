@@ -1,5 +1,11 @@
 {
 	"extends": [
 		"github>balena-os/renovate-config"
+	],
+	"packageRules": [
+		{
+			"matchPackageNames": ["layers/meta-ked-bsp", "layers/meta-ked-bootloader"],
+			"enabled": false
+		}
 	]
 }
