@@ -1,6 +1,31 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v6.5.7
+## (2025-04-02)
+
+
+<details>
+<summary> Update layers/meta-balena to c9903d7b93fd1c9db7c565031145834f61153dbe [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.5.7
+> ### (2025-04-01)
+> 
+> * kernel-balena.bbclass: enable multipath TCP [Joseph Kogut]
+> 
+> ## meta-balena-6.5.6
+> ### (2025-04-01)
+> 
+> * tests: os: modem: Skip modem test if no SIM detected [Ryan Cooke]
+> 
+> ## meta-balena-6.5.5
+> ### (Invalid date)
+> 
+> * initrdscripts: Force migration with secure boot enabled [Michal Toman]
+> 
+
+</details>
+
 # v6.5.4+rev3
 ## (2025-03-30)
 

@@ -1,4 +1,68 @@
 - commits:
+    - subject: Update layers/meta-balena to c9903d7b93fd1c9db7c565031145834f61153dbe
+      hash: c6933fc97f308112a49e3c9feded95c0edbc2835
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to c9903d7b93fd1c9db7c565031145834f61153dbe
+        changelog-entry: Update layers/meta-balena to c9903d7b93fd1c9db7c565031145834f61153dbe
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "kernel-balena.bbclass: enable multipath TCP"
+              hash: e96b6aebcd77ada85e17aec8e7bfe32855e8a0d7
+              body: |
+                Enable multipath TCP (MPTCP) for all devices by default.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-6.5.7
+          title: ""
+          date: 2025-04-01T19:43:34.631Z
+        - commits:
+            - subject: "tests: os: modem: Skip modem test if no SIM detected"
+              hash: d2881bf9c6ef8f94e134362fbf786bd89e841bc1
+              body: >
+                This is to allow for the use case of a test device having a hard
+                wired modem, that won't work in the region the test device is
+                hosted in - e.g NA modem soldered on but test device in the EU.
+                In that case we can remove the SIM, and the test will skip
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: Ryan Cooke
+              nested: []
+          version: meta-balena-6.5.6
+          title: ""
+          date: 2025-04-01T10:45:56.026Z
+        - commits:
+            - subject: "initrdscripts: Force migration with secure boot enabled"
+              hash: a664a14d3e788f086f8572a312a72e5603faf0db
+              body: >
+                As a part of secure boot hardening, we want to avoid flasher
+                running
+
+                userspace from an external drive, and always provision from
+                memory.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-6.5.5
+          title: ""
+          date: 2025-03-30T12:42:16.341Z
+  version: 6.5.7
+  title: ""
+  date: 2025-04-02T04:20:20.474Z
+- commits:
     - subject: Update balena-yocto-scripts to 18950a768d42f7d39ebd6128a1054da6947c5eed
       hash: 49f974e798577d76657d523773998b9fc6b49b43
       body: Update balena-yocto-scripts
