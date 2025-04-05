@@ -1,4 +1,81 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 17e117065455f20d843ff6989e9e28d1f16fec83
+      hash: 2e7bbdcb0c178fba5efc7e01ed621d2ed3f367ad
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 17e117065455f20d843ff6989e9e28d1f16fec83
+        changelog-entry: Update balena-yocto-scripts to 17e117065455f20d843ff6989e9e28d1f16fec83
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update aws/aws-cli to v2.25.11
+              hash: 35a6dd3f898cf98a74ef1e8a382d63a0ceef9d92
+              body: |
+                Update aws/aws-cli from 2.25.10 to 2.25.11
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.31.64
+          title: ""
+          date: 2025-04-04T22:08:25.261Z
+        - commits:
+            - subject: Update aws/aws-cli to v2.25.10
+              hash: 7f27bce5154cb3ab8a4889ac1f8520752998f6c8
+              body: |
+                Update aws/aws-cli from 2.25.6 to 2.25.10
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.31.63
+          title: ""
+          date: 2025-04-04T03:22:22.106Z
+        - commits:
+            - subject: Update actions/create-github-app-token action to v2.0.2
+              hash: e8ce310d9cf19bde0c7238ec8cdd5e24fd807e73
+              body: |
+                Update actions/create-github-app-token from 2.0.0 to 2.0.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.31.62
+          title: ""
+          date: 2025-04-04T01:21:21.447Z
+        - commits:
+            - subject: Update actions/create-github-app-token action to v2
+              hash: 3b5af9e223b560eedb9ab3f74eb2a5c9c81b7895
+              body: |
+                Update actions/create-github-app-token from 1.12.0 to 2.0.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.31.61
+          title: ""
+          date: 2025-04-03T22:27:04.161Z
+        - commits:
+            - subject: Update balena-io/balena-cli to v21.1.8
+              hash: 433a3db14838064ca5f9cd7aaf32516a14c35ce9
+              body: |
+                Update balena-io/balena-cli from 21.1.4 to 21.1.8
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.31.60
+          title: ""
+          date: 2025-04-03T19:48:30.732Z
+  version: 6.5.9+rev2
+  title: ""
+  date: 2025-04-05T01:40:30.782Z
+- commits:
     - subject: Update contracts to 34033e690fc5b1c194114c3aab492036db837bd2
       hash: 9f0b12985af500451059485a66e6298a5e38a938
       body: Update contracts
