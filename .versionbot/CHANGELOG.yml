@@ -1,4 +1,57 @@
 - commits:
+    - subject: Update layers/meta-balena to c2846896f832365bb2205d75d509fe69e034385f
+      hash: c691c34fc4c5e734ca030e2c4d63d3846fe8e273
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to c2846896f832365bb2205d75d509fe69e034385f
+        changelog-entry: Update layers/meta-balena to c2846896f832365bb2205d75d509fe69e034385f
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests: os: secureboot: update kernel-module-build to v3.0.2"
+              hash: 230a38b7b558fe4c9104f86fc605d5d1982759b9
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "tests: secureboot: adapt kernel modules test to private device types"
+              hash: ffb5bd295200dbd081a30789cf0c6a7b5d7d1650
+              body: >
+                If a kernel headers file is provided, use it for the kernel
+                module test.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-6.5.17
+          title: ""
+          date: 2025-04-09T21:47:13.513Z
+        - commits:
+            - subject: "os-helpers: tpm_nvram_store_passphrase: remove tpm2_shutdown"
+              hash: 3526cac33a536465ec60a26214213ddf580c099e
+              body: |
+                This should only be called during machine shutdown
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-6.5.16
+          title: ""
+          date: 2025-04-09T16:17:22.672Z
+  version: 6.5.17
+  title: ""
+  date: 2025-04-10T09:47:51.844Z
+- commits:
     - subject: Update balena-yocto-scripts to ef0d51425a3098a010f8922b340afc9e5e4c3c41
       hash: 38079888b80c0febd4b5962c8ce5bd444b2abba3
       body: Update balena-yocto-scripts
