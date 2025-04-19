@@ -1,6 +1,26 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v6.5.20
+## (2025-04-19)
+
+
+<details>
+<summary> Update layers/meta-balena to 506616fc1e9ab4cb54148a0bed38303312c796dc [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.5.20
+> ### (2025-04-19)
+> 
+> * kernel-balena: add aufs commit for v6.6.84 [Alex Gonzalez]
+> 
+> ## meta-balena-6.5.19
+> ### (2025-04-17)
+> 
+> * os-helpers-tpm2: Always use password protection for TPM NVRAM writes [Michal Toman]
+> 
+
+</details>
+
 # v6.5.18+rev1
 ## (2025-04-15)
 
