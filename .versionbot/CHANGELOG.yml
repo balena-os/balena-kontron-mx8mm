@@ -1,4 +1,56 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 5e33bdd77f207ccf64016feb3a30f4af05e57e96
+      hash: f9e4d385f6a8405a3a7dbe09eab3e365fabc1a69
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 5e33bdd77f207ccf64016feb3a30f4af05e57e96
+        changelog-entry: Update balena-yocto-scripts to 5e33bdd77f207ccf64016feb3a30f4af05e57e96
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update aws/aws-cli to v2.26.5
+              hash: ed0dd7d642fed3a2763fa5d770f7d670d44622c4
+              body: |
+                Update aws/aws-cli from 2.26.2 to 2.26.5
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.31.78
+          title: ""
+          date: 2025-04-18T20:58:31.801Z
+        - commits:
+            - subject: "Leviathan: Add aarch64 testbot fleet to worker pool"
+              hash: db746e411d9640cf48772b87d03a362f1e155fa4
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: Ryan Cooke
+              nested: []
+          version: balena-yocto-scripts-1.31.77
+          title: ""
+          date: 2025-04-15T14:56:51.996Z
+        - commits:
+            - subject: Update aws/aws-cli to v2.26.2
+              hash: 88ec1824b9eba69b15bdfa614d4788eff702d384
+              body: |
+                Update aws/aws-cli from 2.26.1 to 2.26.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.31.76
+          title: ""
+          date: 2025-04-14T21:59:45.235Z
+  version: 6.5.20+rev1
+  title: ""
+  date: 2025-04-19T18:36:13.643Z
+- commits:
     - subject: Update layers/meta-balena to 506616fc1e9ab4cb54148a0bed38303312c796dc
       hash: b9d3305f61ed2bfe4320ff7287de12ff86e76647
       body: Update layers/meta-balena
