@@ -1,6 +1,41 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v6.5.24+rev4
+## (2025-05-04)
+
+
+<details>
+<summary> Update balena-yocto-scripts to d56cc30ad2bebfaa1b0d62be569cf98b4d845d5e [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.31.91
+> ### (2025-05-03)
+> 
+> * Update actions/create-github-app-token action to v2.0.6 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.90
+> ### (2025-05-03)
+> 
+> * Update aws/aws-cli to v2.27.7 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.89
+> ### (2025-05-03)
+> 
+> * Update balena-os/leviathan action to v2.31.105 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.88
+> ### (2025-05-02)
+> 
+> * Update actions/create-github-app-token action to v2.0.5 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.87
+> ### (2025-05-01)
+> 
+> * Update aws/aws-cli to v2.27.6 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.5.24+rev3
 ## (2025-05-03)
 
