@@ -1,6 +1,56 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v6.5.24+rev5
+## (2025-05-08)
+
+
+<details>
+<summary> Update balena-yocto-scripts to af5a025a8c9dd192c5470cf4ef8b9ef9a22e5572 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.32.1
+> ### (2025-05-07)
+> 
+> * Update aws/aws-cli to v2.27.10 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.32.0
+> ### (2025-05-07)
+> 
+> * Remove legacy Jenkins deploy scripts [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.31.97
+> ### (2025-05-07)
+> 
+> * Update balena-io/balena-cli to v21.1.11 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.96
+> ### (2025-05-07)
+> 
+> * Update aws-actions/configure-aws-credentials action to v4.2.0 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.95
+> ### (2025-05-06)
+> 
+> * Update balena-os/leviathan action to v2.31.107 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.94
+> ### (2025-05-06)
+> 
+> * Update balena-os/leviathan action to v2.31.106 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.93
+> ### (2025-05-05)
+> 
+> * Update aws/aws-cli to v2.27.8 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.92
+> ### (2025-05-05)
+> 
+> * Update balena-io/balena-cli to v21.1.10 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.5.24+rev4
 ## (2025-05-04)
 
