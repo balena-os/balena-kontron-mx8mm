@@ -1,4 +1,43 @@
 - commits:
+    - subject: Update balena-yocto-scripts to ac04a4285f9d318bf4d93d7cb684d234dca33226
+      hash: 29b514862f0f1e1d66194809cbe2c94278492c2b
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to ac04a4285f9d318bf4d93d7cb684d234dca33226
+        changelog-entry: Update balena-yocto-scripts to ac04a4285f9d318bf4d93d7cb684d234dca33226
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update Lock file maintenance
+              hash: 7ae9f8e9799da8d63f4e8879e226eb99fb4bbb0c
+              body: |
+                Update 
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.32.27
+          title: ""
+          date: 2025-05-27T04:44:29.632Z
+        - commits:
+            - subject: Update balena-io-examples/setup-balena-action action to v0.0.12
+              hash: ca62a63d7cf6583a956a499e76d9202ab7fe2d35
+              body: >
+                Update balena-io-examples/setup-balena-action from 0.0.10 to
+                0.0.12
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.32.26
+          title: ""
+          date: 2025-05-26T23:58:44.335Z
+  version: 6.5.29+rev11
+  title: ""
+  date: 2025-05-27T09:43:20.729Z
+- commits:
     - subject: Update layers/poky to ab9a994a8cd8e06b519a693db444030999d273b7
       hash: a155db79bb348875e0e0fb9566d5c80590fef548
       body: Update layers/poky
