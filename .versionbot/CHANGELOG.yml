@@ -1,4 +1,55 @@
 - commits:
+    - subject: Update balena-yocto-scripts to de9c7d000abd7fc460beba4f82173d89715b7a50
+      hash: fa865753fb7150cef4e1b2f7db2260bb8f43eebe
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to de9c7d000abd7fc460beba4f82173d89715b7a50
+        changelog-entry: Update balena-yocto-scripts to de9c7d000abd7fc460beba4f82173d89715b7a50
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-os/leviathan action to v2.32.5
+              hash: 80bca9364d15da7a722713bc0e709ad417969248
+              body: |
+                Update balena-os/leviathan from 2.32.2 to 2.32.5
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.33.7
+          title: ""
+          date: 2025-06-02T06:24:45.828Z
+        - commits:
+            - subject: Update product-os/review-commit-action action to v0.3.0
+              hash: 9f32e32c02b7e6e6204387feb540f6bf602ba38f
+              body: |
+                Update product-os/review-commit-action from 0.2.5 to 0.3.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.33.6
+          title: ""
+          date: 2025-05-30T20:00:11.651Z
+        - commits:
+            - subject: Update balena-io/balena-cli to v22.0.5
+              hash: b2e2cf298cf98a73218e82620ecb44fb2af66140
+              body: |
+                Update balena-io/balena-cli from 22.0.1 to 22.0.5
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.33.5
+          title: ""
+          date: 2025-05-30T17:15:59.425Z
+  version: 6.5.29+rev18
+  title: ""
+  date: 2025-06-02T10:04:17.962Z
+- commits:
     - subject: Update layers/poky to 3810d71ad8ee9dee94903901c87cd0b642425cd1
       hash: baf92e47c9e3597d0bba717030020751d79af3d6
       body: Update layers/poky
