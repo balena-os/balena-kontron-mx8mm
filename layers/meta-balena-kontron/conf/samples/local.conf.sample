@@ -67,3 +67,6 @@ ACCEPT_FSL_EULA = "1"
 
 PREFERRED_PROVIDER_virtual/bootloader = "u-boot-ktn"
 PREFERRED_PROVIDER_u-boot = "u-boot-ktn"
+
+# CycloneDX SBOM and VEX generation
+INHERIT += "cyclonedx-export"

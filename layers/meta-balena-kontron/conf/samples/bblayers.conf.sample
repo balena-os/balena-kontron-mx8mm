@@ -21,4 +21,5 @@ BBLAYERS ?= " \
     ${TOPDIR}/../layers/meta-ked-bsp/layers/meta-ked-imx \
     ${TOPDIR}/../layers/meta-ked-bootloader/layers/meta-ked-bootloader \
     ${TOPDIR}/../layers/meta-freescale \
+    ${TOPDIR}/../layers/meta-cyclonedx  \
     "
