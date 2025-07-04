@@ -28,3 +28,7 @@
 [submodule "layers/meta-ked-bootloader"]
 	path = layers/meta-ked-bootloader
 	url = https://git.kontron-electronics.de/sw/ked/meta-ked-bootloader.git
+[submodule "layers/meta-cyclonedx"]
+	path = layers/meta-cyclonedx
+	url = https://github.com/balena-os/meta-cyclonedx
+	branch = kirkstone
