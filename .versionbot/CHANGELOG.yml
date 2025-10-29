@@ -1,4 +1,32 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 157ae82bf37b6258655a9a3a30c2bfee884cbb72
+      hash: 374a279b1da8ea7f537bcd22f2eabce6dc9fa2b3
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 157ae82bf37b6258655a9a3a30c2bfee884cbb72
+        changelog-entry: Update balena-yocto-scripts to 157ae82bf37b6258655a9a3a30c2bfee884cbb72
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Use the target deploy env to preload the supervisor
+              hash: b42cffcaa6f359dc2392c4ce71c67bf77609bff8
+              body: |
+                This fixes a regression introduced by this workflow when
+                we split the build and deploy environments.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.38.64
+          title: ""
+          date: 2025-10-29T10:10:20.465Z
+  version: 6.5.29+rev75
+  title: ""
+  date: 2025-10-29T15:30:46.454Z
+- commits:
     - subject: Update balena-yocto-scripts to aa7f0cab380e7f58c861ecfb135b379e62da3afa
       hash: 48ede1ab61f39130c23dfa8bd253522becb049e2
       body: Update balena-yocto-scripts
