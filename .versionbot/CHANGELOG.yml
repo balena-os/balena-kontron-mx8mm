@@ -1,4 +1,34 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 03ec60707e750f75c7e16d94b86b9e10468cd340
+      hash: bf855ac582f81271faf6b147bdc367ca15fc4ff6
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 03ec60707e750f75c7e16d94b86b9e10468cd340
+        changelog-entry: Update balena-yocto-scripts to 03ec60707e750f75c7e16d94b86b9e10468cd340
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Switch back to official actions/download-artifact action @ v6.0.0
+              hash: 7b867eee714917517027d715c11e76287a0e0fdd
+              body: >
+                The original issue where promises were not rejected when a
+                download
+
+                timeout was reached was fixed by actions/toolkit#2124
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.38.69
+          title: ""
+          date: 2025-10-31T18:22:38.774Z
+  version: 6.5.29+rev79
+  title: ""
+  date: 2025-10-31T21:54:31.658Z
+- commits:
     - subject: Update layers/poky to 7ca21c761ab9f2cc8f9880729d6149e0e2e68598
       hash: 653dfbadd5ba98065e8132ec1e81eb6c93302b23
       body: Update layers/poky
