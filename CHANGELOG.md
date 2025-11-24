@@ -1,6 +1,33 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v6.5.29+rev99
+## (2025-11-24)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 7b2a9b7878cc4352c1451ccb531c7b01c2885e9c [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.38.96
+> ### (2025-11-24)
+> 
+> * workflows: Add Generic x86_64 (GPT) and Generic AARCH64 device tests [Kyle Harding]
+> * Dockerfile_yocto-build-env: Avoid balena CLI duplicate install [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.38.95
+> ### (2025-11-22)
+> 
+> * Update actions/create-github-app-token action to v2.2.0 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.94
+> ### (2025-11-22)
+> 
+> * Update actions/checkout action to v6 [balena-renovate[bot]]
+> * Update balena-io/balena-cli to v23.2.0 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.5.29+rev98
 ## (2025-11-22)
 
