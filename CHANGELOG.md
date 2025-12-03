@@ -1,6 +1,21 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v6.5.29+rev104
+## (2025-12-03)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 2c9a51d7ad90ba4625e859aefd503dff0ff6b678 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.39.0
+> ### (2025-12-03)
+> 
+> * verify that keys from SIGN_KMOD_KEY_APPEND ends up properly in kernel [Yann CARDAILLAC]
+> 
+
+</details>
+
 # v6.5.29+rev103
 ## (2025-12-03)
 
