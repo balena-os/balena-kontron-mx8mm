@@ -1,4 +1,50 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 47c09dfe0998e580adaefd83713a6e38466d0455
+      hash: c84ada79f44a384f714f97769cd5e716e8571365
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 47c09dfe0998e580adaefd83713a6e38466d0455
+        changelog-entry: Update balena-yocto-scripts to 47c09dfe0998e580adaefd83713a6e38466d0455
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update aws/aws-cli to v2.32.8
+              hash: ec3eb613943c1c473191427c8b7e90b6262850ae
+              body: |
+                Update aws/aws-cli from 2.32.4 to 2.32.8
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.99
+          title: ""
+          date: 2025-12-03T03:21:19.732Z
+        - commits:
+            - subject: Update balena-io/balena-cli to v23.2.2
+              hash: 8a720c985c61482c8f432c7e984ea2abc48aa85a
+              body: |
+                Update balena-io/balena-cli from 23.2.0 to 23.2.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.98
+          title: ""
+          date: 2025-12-02T19:23:59.478Z
+    - subject: Update layers/poky to c76f44b1da3563b8acd364ea0c632265aa3f7e83
+      hash: da89cb7949f753ebef95dcf55174eedfe0a4362a
+      body: Update layers/poky
+      footer:
+        Changelog-entry: Update layers/poky to c76f44b1da3563b8acd364ea0c632265aa3f7e83
+        changelog-entry: Update layers/poky to c76f44b1da3563b8acd364ea0c632265aa3f7e83
+      author: balena-renovate[bot]
+      nested: []
+  version: 6.5.29+rev103
+  title: ""
+  date: 2025-12-03T10:25:29.843Z
+- commits:
     - subject: Update balena-yocto-scripts to e13978ea64fc17c594bcdf8f6d894b3864fb1c6b
       hash: e042b1a82d21ccef30537015f48f45f67b1029dc
       body: Update balena-yocto-scripts
