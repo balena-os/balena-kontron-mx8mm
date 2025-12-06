@@ -1,6 +1,11 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v6.5.29+rev106
+## (2025-12-06)
+
+* Update meta-ked-bsp to release 6.3.2 [Florin Sarbu]
+
 # v6.5.29+rev105
 ## (2025-12-06)
 
