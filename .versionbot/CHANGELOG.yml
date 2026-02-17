@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update layers/meta-balena to f37c4fd776dfcec74405e137fe79e24a7a92a924
+      hash: e770465c93afeeeb94dd78b5ff004f944b6158c7
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to f37c4fd776dfcec74405e137fe79e24a7a92a924
+        changelog-entry: Update layers/meta-balena to f37c4fd776dfcec74405e137fe79e24a7a92a924
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "peak: Update to version 9.0"
+              hash: 37ab4aef27be7c9042757b3f3d2b91080a5b4259
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-6.11.1
+          title: ""
+          date: 2026-02-17T13:05:12.004Z
+  version: 6.11.1
+  title: ""
+  date: 2026-02-17T19:36:08.698Z
+- commits:
     - subject: Update layers/poky to 58f9b898daef8272184b1be176a18428f9f9d9b3
       hash: 680a1aab985c7fb4ddd7ee6a3887b37b1e74c91f
       body: Update layers/poky
