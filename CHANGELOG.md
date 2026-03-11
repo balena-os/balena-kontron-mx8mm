@@ -1,6 +1,47 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v6.11.11
+## (2026-03-11)
+
+
+<details>
+<summary> Update layers/meta-balena to db20cbc5a2111924ec896c183539400d81d29e4c [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.11.11
+> ### (2026-03-10)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v17.6.3 [balena-renovate[bot]] </summary>
+> 
+>> ### balena-supervisor-17.6.3
+>> #### (2026-03-10)
+>> 
+>> * Only report download progress if service status is `Downloading` [Felipe Lalanne]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.11.10
+> ### (2026-03-05)
+> 
+> * efitools: update to master [Michal Toman]
+> 
+> ## meta-balena-6.11.9
+> ### (2026-03-04)
+> 
+> * recipes-support/hostapp-update-hooks: Deploy blacklisted bootloader files [Alexandru Costache]
+> 
+> ## meta-balena-6.11.8
+> ### (2026-03-03)
+> 
+> * hostapp-update-hooks: allow GRUB downgrade during secure boot rollbacks [Michal Toman]
+> 
+
+</details>
+
 # v6.11.7+rev2
 ## (2026-03-11)
 
