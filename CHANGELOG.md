@@ -1,6 +1,11 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v6.12.1+rev1
+## (2026-03-19)
+
+* Allow custom meta-balena ref on workflow dispatch [Yann CARDAILLAC]
+
 # v6.12.1
 ## (2026-03-18)
 
