@@ -1,4 +1,48 @@
 - commits:
+    - subject: Update layers/meta-balena to 28c9591e69a47f17f0827980b33d5bfc567eeb0c
+      hash: 2a0db61105cc92ff76d8f8a4521024928504147d
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 28c9591e69a47f17f0827980b33d5bfc567eeb0c
+        changelog-entry: Update layers/meta-balena to 28c9591e69a47f17f0827980b33d5bfc567eeb0c
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update actions/checkout digest to de0fac2
+              hash: 71b5d16d84c284c2fdb2d50ec6fce0b5ebe6eb5a
+              body: >
+                Update actions/checkout to
+                de0fac2e4500dabe0009e67214ff5f5447ce83dd
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: meta-balena-6.12.6
+          title: ""
+          date: 2026-04-10T11:35:57.174Z
+        - commits:
+            - subject: ".github/workflows: Remove discontinued machines"
+              hash: 5f2ca2e4adaf3c7ef807e1f82e55c07537540dc2
+              body: |
+                It was decided to remove support for these machines based on
+                hardware being discontinued or lack of customer interest:
+
+                https://docs.balena.io/reference/hardware/versioning#discontinued
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-6.12.5
+          title: ""
+          date: 2026-04-09T01:53:25.209Z
+  version: 6.12.6
+  title: ""
+  date: 2026-04-10T18:30:26.118Z
+- commits:
     - subject: Update product-os/flowzone to 9ba87de4b6abf49c021894388f81de59bfa4a523
       hash: 712b13540890fcf2ab31a11b7196e107bd7e2899
       body: Update product-os/flowzone

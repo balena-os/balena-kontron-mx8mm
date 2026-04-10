@@ -1,6 +1,26 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v6.12.6
+## (2026-04-10)
+
+
+<details>
+<summary> Update layers/meta-balena to 28c9591e69a47f17f0827980b33d5bfc567eeb0c [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.12.6
+> ### (2026-04-10)
+> 
+> * Update actions/checkout digest to de0fac2 [balena-renovate[bot]]
+> 
+> ## meta-balena-6.12.5
+> ### (2026-04-09)
+> 
+> * .github/workflows: Remove discontinued machines [Florin Sarbu]
+> 
+
+</details>
+
 # v6.12.4+rev2
 ## (2026-04-04)
 
