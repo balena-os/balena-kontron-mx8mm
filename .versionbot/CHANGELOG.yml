@@ -1,4 +1,98 @@
 - commits:
+    - subject: Update layers/meta-balena to 3f363dc14666d0d39b8f039b194198b5f5cf81f7
+      hash: 5472e58fe3cbbe9d38b832690a68003db7ce840b
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 3f363dc14666d0d39b8f039b194198b5f5cf81f7
+        changelog-entry: Update layers/meta-balena to 3f363dc14666d0d39b8f039b194198b5f5cf81f7
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "kernel-balena: address CVE-2026-43284"
+              hash: f774fd5ea5dff8e1751c19a62825330fce043425
+              body: >
+                This commit removes the esp4/esp6 and rxrpc modules as they are
+                vulnerable.
+
+
+                Devices will not be able to use IPSEC based VPNs (esp4/esp6).
+                The only
+
+                consumer of rxrpc is the in-kernel AFS (Andrew File System)
+                which is
+
+                experimental anyway.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-7.0.2
+          title: ""
+          date: 2026-05-11T13:58:10.857Z
+        - commits:
+            - subject: "kernel-balena: address CVE-2026-31431"
+              hash: d95ef53e5e65cabc0dcbb87db994463367bd2bad
+              body: |
+                Unconditionally remove CONFIG_CRYPTO_USER_API_AEAD.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-7.0.1
+          title: ""
+          date: 2026-05-08T11:09:20.703Z
+        - commits:
+            - subject: "mobynit: update to v1.0.0"
+              hash: d3c6c79ec6ff747fdcec1534bd704950b163f63b
+              body: >
+                This mobynit version mounts the rootfs as lowerdirs and is
+                intrinsically
+
+                read-only.
+              footer:
+                Change-type: major
+                change-type: major
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-7.0.0
+          title: ""
+          date: 2026-04-24T18:34:48.170Z
+        - commits:
+            - subject: "tests: cloud: Stop waiting for healthy supervisor in cloud suite
+                before preload test"
+              hash: 6afa76bd2f4cd1a342a3dd2339976a380e40b607
+              body: >
+                In the cloud suite we provision the device with no internet - to
+                test that the prloaded app starts on first boot without api
+                access. Supervisor 17.6.26 fixed a supervisor connectivity
+                healthcheck, that causes the supervisor to now correctly report
+                as non healthy if there is no connectivity. This caused a
+                failure in the cloud suite where we were waiting for a healthy
+                supervisor to continue to the preloaded app test, but as the
+                internet is disabled until we complete that test, we were
+                waiting until the test timed out.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: Ryan Cooke
+              nested: []
+          version: meta-balena-6.12.11
+          title: ""
+          date: 2026-04-23T05:56:40.348Z
+  version: 7.0.2
+  title: ""
+  date: 2026-05-11T20:59:29.022Z
+- commits:
     - subject: Update balena-yocto-scripts to 50033716c5e2384d71a896205465d0a1223f3bed
       hash: eb4aa1310982638cbcca68404615e4c7c479eeff
       body: Update balena-yocto-scripts

@@ -1,6 +1,36 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v7.0.2
+## (2026-05-11)
+
+
+<details>
+<summary> Update layers/meta-balena to 3f363dc14666d0d39b8f039b194198b5f5cf81f7 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-7.0.2
+> ### (2026-05-11)
+> 
+> * kernel-balena: address CVE-2026-43284 [Alex Gonzalez]
+> 
+> ## meta-balena-7.0.1
+> ### (2026-05-08)
+> 
+> * kernel-balena: address CVE-2026-31431 [Alex Gonzalez]
+> 
+> ## meta-balena-7.0.0
+> ### (2026-04-24)
+> 
+> * mobynit: update to v1.0.0 [Alex Gonzalez]
+> 
+> ## meta-balena-6.12.11
+> ### (2026-04-23)
+> 
+> * tests: cloud: Stop waiting for healthy supervisor in cloud suite before preload test [Ryan Cooke]
+> 
+
+</details>
+
 # v6.12.10+rev3
 ## (2026-05-07)
 
