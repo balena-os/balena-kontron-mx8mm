@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update product-os/flowzone to e50db2fb83d4f81da63559a2d62a2b4a0284b6c2
+      hash: d1ebf0696654759c0ea7d3a81f1eea9c85f17afc
+      body: Update product-os/flowzone
+      footer:
+        Changelog-entry: Update product-os/flowzone to e50db2fb83d4f81da63559a2d62a2b4a0284b6c2
+        changelog-entry: Update product-os/flowzone to e50db2fb83d4f81da63559a2d62a2b4a0284b6c2
+      author: balena-renovate[bot]
+      nested: []
+  version: 7.0.2+rev2
+  title: ""
+  date: 2026-05-13T05:48:57.193Z
+- commits:
     - subject: Update layers/poky to b0134a0f1382a267f79ec881af916d641d41b235
       hash: 57f082c6d9f94cc85095fe6bdb4a0dbdf7a61085
       body: Update layers/poky
