@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update product-os/flowzone to 52950052c36516d5ddd634a10929293160f6d42e
+      hash: eb0708fe8ba7b673ed691e2bbf0092fdc8e5cb03
+      body: Update product-os/flowzone
+      footer:
+        Changelog-entry: Update product-os/flowzone to 52950052c36516d5ddd634a10929293160f6d42e
+        changelog-entry: Update product-os/flowzone to 52950052c36516d5ddd634a10929293160f6d42e
+      author: balena-renovate[bot]
+      nested: []
+  version: 7.0.3+rev2
+  title: ""
+  date: 2026-05-16T13:57:10.978Z
+- commits:
     - subject: Update layers/meta-openembedded to
         ce8539c941f6fcbecaca4d16640ac105c0595589
       hash: 3db36fde353065243434ef31eef9755ac662844f
