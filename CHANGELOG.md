@@ -1,6 +1,11 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v7.0.4+rev1
+## (2026-05-22)
+
+* unpin flowzone, track @master [Kyle Harding]
+
 # v7.0.4
 ## (2026-05-21)
 
