@@ -1,6 +1,26 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v7.0.6
+## (2026-05-25)
+
+
+<details>
+<summary> Update layers/meta-balena to 79cfd47b693b7b2109db29d78b6d0ec516ae5f94 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-7.0.6
+> ### (2026-05-25)
+> 
+> * wpa_supplicant: enable OWE networks [Michal Toman]
+> 
+> ## meta-balena-7.0.5
+> ### (2026-05-21)
+> 
+> * image-balena: include size of boot directory in HUP check [Alex Gonzalez]
+> 
+
+</details>
+
 # v7.0.4+rev1
 ## (2026-05-22)
 
