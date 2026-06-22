@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update layers/meta-balena to 509f39187ffe70e7bb45ee0b8b052b3b58ae56b0
+      hash: 68c5433c5eb4f1d59d0370347605a0c792ae9109
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 509f39187ffe70e7bb45ee0b8b052b3b58ae56b0
+        changelog-entry: Update layers/meta-balena to 509f39187ffe70e7bb45ee0b8b052b3b58ae56b0
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "balena: bump balena-engine to restore 1777 default for bare tmpfs
+                mounts"
+              hash: 94d798cdc879b302f5fc481f63e0be8f12e8175c
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-7.5.4
+          title: ""
+          date: 2026-06-21T20:25:17.143Z
+  version: 7.5.4
+  title: ""
+  date: 2026-06-22T01:25:09.314Z
+- commits:
     - subject: Update balena-yocto-scripts to 28481193eb5a8748685099096e148bb8cf3b54fc
       hash: 9d423202fd9d46b6072311fdf4c121e08ce97d4c
       body: Update balena-yocto-scripts
