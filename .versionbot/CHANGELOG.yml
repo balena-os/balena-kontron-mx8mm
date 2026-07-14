@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update balena-os/github-workflows to
+        84d01a24c04dd1a1e4f0acc92ddb87c44844ed6b
+      hash: 801ad72b06e997124a923f0f0f635ad504913c06
+      body: Update balena-os/github-workflows
+      footer:
+        Changelog-entry: Update balena-os/github-workflows to
+          84d01a24c04dd1a1e4f0acc92ddb87c44844ed6b
+        changelog-entry: Update balena-os/github-workflows to
+          84d01a24c04dd1a1e4f0acc92ddb87c44844ed6b
+      author: balena-renovate[bot]
+      nested: []
+  version: 7.5.5+rev2
+  title: ""
+  date: 2026-07-14T11:25:25.583Z
+- commits:
     - subject: Update balena-yocto-scripts to 7d1760c79d5584f3d6bf9a1c2d0e796b6a5b5d82
       hash: 3e2ebb16e335fe3213ed2287108cf9bebba132d4
       body: Update balena-yocto-scripts
