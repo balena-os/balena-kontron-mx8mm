@@ -23,7 +23,7 @@
 	branch = kirkstone
 [submodule "layers/meta-freescale"]
 	path = layers/meta-freescale
-	url = https://git.yoctoproject.org/git/meta-freescale
+	url = https://git.yoctoproject.org/meta-freescale
 	branch = kirkstone
 [submodule "layers/meta-ked-bootloader"]
 	path = layers/meta-ked-bootloader
