@@ -7,3 +7,7 @@ BALENA_BOOT_PARTITION_FILES:append:kontron-mx8mm = " \
 IMAGE_CMD:balenaos-img:append () {
     dd if=${DEPLOY_DIR_IMAGE}/flash.bin of=${BALENA_RAW_IMG} conv=notrunc seek=33 bs=1K
 }
+
+IMAGE_ROOTFS_SIZE:kontron-mx8mm = "327680"
+BALENA_BOOT_SIZE:kontron-mx8mm = "40960"
+BALENA_STATE_SIZE:kontron-mx8mm = "20480"
