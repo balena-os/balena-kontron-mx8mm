@@ -1,6 +1,26 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v7.7.1+rev3
+## (2026-07-28)
+
+
+<details>
+<summary> Update contracts to a4ab96e2b9f6f8c40f80072f7dd1d2369eb7466e [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.146
+> ### (2026-07-16)
+> 
+> * Modify existing device family and manufacturer metadata [Pranas Ziaukas]
+> 
+> ## contracts-2.0.145
+> ### (2026-07-01)
+> 
+> * hw/device-type: Add Jetson AGX Thor Devkit contract [Alexandru Costache]
+> 
+
+</details>
+
 # v7.7.1+rev2
 ## (2026-07-27)
 
