@@ -1,4 +1,75 @@
 - commits:
+    - subject: Update layers/meta-balena to e5daefeadc0626b726c822413c86ac0cb259ee91
+      hash: c57208fe10d4aab83421aaf7d40c952f02dbca5e
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to e5daefeadc0626b726c822413c86ac0cb259ee91
+        changelog-entry: Update layers/meta-balena to e5daefeadc0626b726c822413c86ac0cb259ee91
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "initrdscripts: check alignment of data partition in resindataexpander"
+              hash: 42450da183032bdc557b8f551bade040345c5e76
+              body: >
+                We have seen an SSD that reports physical sector size 4KB and
+                logical
+
+                sector size 512B. The total length of the disk is not a multiple
+
+                of 4KB, but the parted command that we're currently using
+
+                in the resindataexpander script aligns to 512B and ends the
+                partition
+
+                in the middle of a physical sector.
+
+
+                This is not a problem for regular devices that just format
+
+                the partition as ext4, but devices that use disk encryption with
+                LUKS
+
+                always align to physical sector size - in this case 4KB. When
+                trying
+
+                to access the partition after resizing, LUKS complains about
+
+                the misalignment and refuses to unlock the partition.
+
+
+                This patch adds a check that makes sure the partition is
+                properly
+
+                aligned after resizing and trims the extra space if necessary.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-7.8.1
+          title: ""
+          date: 2026-07-31T19:50:09.114Z
+        - commits:
+            - subject: "mobynit: update to v1.1.0"
+              hash: b7f6b20d99d0bdd7ed489cb839324884acc920a2
+              body: |
+                Update from v1.0.1 to v1.1.0
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-7.8.0
+          title: ""
+          date: 2026-07-29T07:22:20.789Z
+  version: 7.8.1
+  title: ""
+  date: 2026-08-01T05:03:37.167Z
+- commits:
     - subject: Update layers/meta-balena to f953cbe62e7bd00402a5ad083d8a7431a00ec3c4
       hash: dac69702f4b8271acbd5a17f8f294c9b27ca55b0
       body: Update layers/meta-balena
