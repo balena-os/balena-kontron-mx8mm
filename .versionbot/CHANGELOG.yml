@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to 410a252de768cef05e71bde5417361819dda50e1
+      hash: 0039950604852b9310c4b2f29b1a9b09aa824517
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 410a252de768cef05e71bde5417361819dda50e1
+        changelog-entry: Update contracts to 410a252de768cef05e71bde5417361819dda50e1
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Add device family and manufacturer metadata
+              hash: a74ddb06557df9e0c19f8201d095be10828ef47a
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Pranas Ziaukas <pranas@balena.io>
+                signed-off-by: Pranas Ziaukas <pranas@balena.io>
+              author: Pranas Ziaukas
+          version: contracts-2.0.147
+          title: ""
+          date: 2026-08-04T04:57:52.384Z
+  version: 7.8.1+rev1
+  title: ""
+  date: 2026-08-04T11:14:38.800Z
+- commits:
     - subject: Update layers/meta-balena to e5daefeadc0626b726c822413c86ac0cb259ee91
       hash: c57208fe10d4aab83421aaf7d40c952f02dbca5e
       body: Update layers/meta-balena
