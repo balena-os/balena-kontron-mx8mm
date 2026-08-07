@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update layers/meta-balena to 669cd979a6d181271989e268bdb334c600b16955
+      hash: 422b419916789c139b09c5c1a2c8f651174a8a17
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 669cd979a6d181271989e268bdb334c600b16955
+        changelog-entry: Update layers/meta-balena to 669cd979a6d181271989e268bdb334c600b16955
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "extra-udev-rules: Disable power management on mlan* wireless network
+                interfaces"
+              hash: ad892c3e437a49a800d57e665f31a834c0dad0b8
+              body: >
+                The moal driver used in various hardware exposes the wireless
+                network interfaces as mlan*
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-7.9.2
+          title: ""
+          date: 2026-08-07T15:12:33.847Z
+  version: 7.9.2
+  title: ""
+  date: 2026-08-07T22:35:29.094Z
+- commits:
     - subject: Update layers/meta-cyclonedx to 221bf15bf2081d1d025f069429f1b94a14d520af
       hash: 86e68e0283552fea5572dda2003352bd854674a4
       body: Update layers/meta-cyclonedx
