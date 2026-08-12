@@ -1,4 +1,41 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 325619779b25b2bec08c597375a65c016f799cae
+      hash: ddf2aa07858ea5ddace8dae1a90a3f496ee96401
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 325619779b25b2bec08c597375a65c016f799cae
+        changelog-entry: Update balena-yocto-scripts to 325619779b25b2bec08c597375a65c016f799cae
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update GitHub Actions
+              hash: 72fa14c6875acd783a5251cf7b9deeb7b90979da
+              body: |
+                Update actions/checkout from 6.0.3 to 6.1.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.42.3
+          title: ""
+          date: 2026-08-12T05:19:09.347Z
+        - commits:
+            - subject: Add source-mirror-setup dependency to All Jobs
+              hash: cfd9b04da5abda6e8495ded8796b27b22eed9626
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.42.2
+          title: ""
+          date: 2026-08-12T00:49:58.776Z
+  version: 7.9.3+rev2
+  title: ""
+  date: 2026-08-12T10:01:52.174Z
+- commits:
     - subject: Update balena-yocto-scripts to 41fe121711c72f671c4b756f3e19f89f0d9561cc
       hash: 11c9641add7a3b9f5f19ea47c16e5223d6be6625
       body: Update balena-yocto-scripts
