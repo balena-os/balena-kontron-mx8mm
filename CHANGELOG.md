@@ -1,6 +1,31 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v8.0.4+rev1
+## (2026-08-30)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 8010de2389711c1358480d87ca5b5540b6e60501 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.42.11
+> ### (Invalid date)
+> 
+> * Update GitHub Actions [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.42.10
+> ### (2026-08-28)
+> 
+> * Update aws/aws-cli to v2.36.33 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.42.9
+> ### (2026-08-28)
+> 
+> * Update flowzonify to v0.4.2 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v8.0.4
 ## (2026-08-27)
 
