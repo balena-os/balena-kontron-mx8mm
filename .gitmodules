@@ -13,6 +13,7 @@
 [submodule "layers/meta-ked-bsp"]
 	path = layers/meta-ked-bsp
 	url = https://git.kontron-electronics.de/sw/ked/meta-ked-bsp.git
+	branch = main
 [submodule "layers/poky"]
 	path = layers/poky
 	url = https://github.com/balena-os/poky
@@ -28,6 +29,7 @@
 [submodule "layers/meta-ked-bootloader"]
 	path = layers/meta-ked-bootloader
 	url = https://git.kontron-electronics.de/sw/ked/meta-ked-bootloader.git
+	branch = main
 [submodule "layers/meta-cyclonedx"]
 	path = layers/meta-cyclonedx
 	url = https://github.com/balena-os/meta-cyclonedx
