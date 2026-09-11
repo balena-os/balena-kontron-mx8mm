@@ -1,4 +1,21 @@
 - commits:
+    - subject: ".gitmodules: Declare a branch for every submodule"
+      hash: a9da6d3d41c8d152c80c575328dbcf5cb7a68af7
+      body: |
+        check_gitmodules_branches fails while any submodule has no branch
+        declared. 2 submodules had none here. Every branch declared
+        contains the current pin, verified against the remote.
+      footer:
+        Changelog-entry: ".gitmodules: Declare a branch for every submodule"
+        changelog-entry: ".gitmodules: Declare a branch for every submodule"
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 8.0.9+rev1
+  title: ""
+  date: 2026-09-11T15:50:14.785Z
+- commits:
     - subject: Update layers/meta-balena to 52a7cea12239941bcf068a78c960e11093db289c
       hash: 9eea82fd1595ddde4cf850ea25b9505ce65a53f5
       body: Update layers/meta-balena
