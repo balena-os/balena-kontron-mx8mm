@@ -1,4 +1,850 @@
 - commits:
+    - subject: Update layers/meta-balena to 61d294761aaafe47398d4a4be5001577c29e2ac2
+      hash: 57c5c24b5906ce58d3c90bf97e6819112b38bb52
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 61d294761aaafe47398d4a4be5001577c29e2ac2
+        changelog-entry: Update layers/meta-balena to 61d294761aaafe47398d4a4be5001577c29e2ac2
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "systemd: break unit ordering loop cycle"
+              hash: 07d020686a7854155789aa7354e2a97df6c3ce58
+              body: >
+                Every balenaOS boot since v2.73.8 carries a systemd ordering
+                cycle that
+
+                systemd breaks by deleting one job randomly from the boot
+                transaction.
+
+                When the deleted job is `var-volatile.mount`, the device goes
+                offline.
+
+
+                The cycle is:
+
+
+                `resin-state-reset.service -> var-volatile.mount ->
+                local-fs-pre.target
+                    -> systemd-remount-fs.service -> systemd-fsck-root.service
+                    -> fake-hwclock.service -> etc-fake-hwclock.mount
+                    -> resin-state-reset.service`
+
+                A second loop goes from `etc-fake-hwclock.mount` to
+                `local-fs-pre.target`
+
+                through the default dependencies of the mount, and back through
+                the
+
+                same fsck edge.
+
+
+                This commit:
+
+
+                - Drops `var-volatile.mount` from `resin-state-reset.service`.
+                The reset
+                  script only writes to `/mnt/state` and never touches `/var/volatile`.
+                - Drops `systemd-fsck-root.service` from the `Before=` list of
+                  `fake-hwclock.service`. The edge has no function: `e2fsck.conf` sets
+                  `broken_system_clock=1`, so fsck ignores the clock. With the edge, any
+                  ordering from the state units to an ordinary mount closes the loop
+                  again.
+                - Adds `DefaultDependencies=no` to `etc-fake-hwclock.mount`.
+                This removes
+                  the implicit `After=local-fs-pre.target`, so `fake-hwclock` still sets
+                  the clock before journald starts and does not wait for the local
+                  filesystems.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "test: add systemd unit ordering check"
+              hash: 79e6561050f22ae148e33dfcd6ddc9479f587603
+              body: >
+                Check that no circular cycles exist that systemd detects and
+                breaks.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-9.0.7
+          title: ""
+          date: 2026-11-12T10:02:50.364Z
+        - commits:
+            - subject: "tests: os: config-json: use the shared journal helper"
+              hash: 1d5b4bc2985617007bb62d5179683467b85e290a
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "dnsmasq: move the settings to a conf.d drop-in"
+              hash: 37dde807ac5e7494c1b38a50acbb05f4b2df038b
+              body: >
+                The v2.92 update stopped installing file://dnsmasq.conf, which
+                carried
+
+                enable-dbus, domain-needed and bogus-priv.
+
+
+                enable-dbus lets any container with io.balena.features.dbus set
+                the
+
+                upstream servers. That is the documented contract of the label.
+
+
+                This commit moves  them into a balena-files directory so they
+                can not be missed
+
+                again.
+
+
+                Devices running without these options forwarded plain names and
+
+                private reverse lookups upstream.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-9.0.6
+          title: ""
+          date: 2026-11-09T12:21:03.299Z
+        - commits:
+            - subject: Update tests/leviathan digest to 2444d08
+              hash: d148c1502131deb876a029745f15c6e42f2997bc
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: "core/contracts: Update to v2.0.151"
+                      hash: 29495b3b6effeee3eba7eb818ee6aa7c134d8346
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                        signed-off-by: Alexandru Costache <alexandru@balena.io>
+                      author: Alexandru Costache
+                      nested: []
+                  version: leviathan-2.36.134
+                  title: ""
+                  date: 2026-11-05T13:20:08.264Z
+          version: meta-balena-9.0.5
+          title: ""
+          date: 2026-11-05T20:37:35.534Z
+        - commits:
+            - subject: "balena-os.inc: Derive the board VERSION path from COREBASE"
+              hash: 2a2915b92799a09c9914cde7b267d4e39d4a35ca
+              body: >
+                The previous code searched BBLAYERS for a layer that ends in
+                poky/meta.
+
+                Yocto 6.0 Wrynose retires the poky combo repository. A Wrynose
+                build uses
+
+                openembedded-core, bitbake and meta-yocto directly. No layer
+                path then
+
+                ends in poky/meta, so HOSTOS_VERSION kept its default. COREBASE
+                points at
+
+                the core metadata directory in both layouts.
+
+
+                Fail the build when the VERSION file is missing or empty, or
+                when COREBASE
+
+                is unset.
+              footer:
+                See: https://www.yoctoproject.org/blog/2026/05/13/yocto-project-6-0-wrynose-is-here/
+                see: https://www.yoctoproject.org/blog/2026/05/13/yocto-project-6-0-wrynose-is-here/
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-9.0.4
+          title: ""
+          date: 2026-10-29T08:50:17.780Z
+        - commits:
+            - subject: "start-balena-supervisor: Trust the hostOS CA bundle"
+              hash: fa51000e79a3b01c0db4b810e95f1666c1951fd1
+              body: >
+                The supervisor trusts the CA bundle in its image. A hostOS
+                update that
+
+                distrusts roots, like the eMudhra fix (CVE-2026-111943), leaves
+                the
+
+                supervisor trusting them until a new supervisor image ships.
+
+
+                The supervisor node is built with --openssl-use-def-ca-store, so
+                it reads
+
+                SSL_CERT_FILE and SSL_CERT_DIR. Point SSL_CERT_FILE at the
+                hostOS bundle
+
+                through the existing /mnt/root mount, and hide the image CA
+                directory.
+
+                Fall back to the image defaults when the hostOS bundle is
+                missing, because
+
+                an empty SSL_CERT_FILE leaves the supervisor with no roots.
+
+
+                Add both variables to configIsUnchanged, so a hostOS update
+                recreates an
+
+                existing supervisor container.
+              footer:
+                See: https://emudhra.we-have-a-problem.com
+                see: https://emudhra.we-have-a-problem.com
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Shaun Mulligan <switchflip.shaun@gmail.com>
+                signed-off-by: Shaun Mulligan <switchflip.shaun@gmail.com>
+              author: Shaun Mulligan
+              nested: []
+          version: meta-balena-9.0.3
+          title: ""
+          date: 2026-10-22T00:20:57.018Z
+        - commits:
+            - subject: "extract-balena-ca: Rebuild the CA bundle when its inputs change"
+              hash: 1ddb6cbaada5cc0c18861b5c520b921c7e9426b2
+              body: >
+                When /usr/share/ca-certificates/balena is not empty,
+                /etc/ssl/certs is
+
+                bind mounted from the state partition. The bundle was only
+                rebuilt when
+
+                the custom CA in config.json changed, so a hostOS update never
+
+                refreshed the system roots in it. Removing the CA from
+                config.json
+
+                skipped the rebuild entirely.
+
+
+                Hash the system roots, ca-certificates.conf and the custom CA,
+                and
+
+                rebuild when the hash differs from the one stored next to the
+                bundle.
+
+                A failed rebuild logs an error but doesn't fail the unit, since
+
+                balena-supervisor requires it.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: "ca-certificates: Distrust roots chaining to compromised eMudhra CAs"
+              hash: 04623c3b487fad25ab672c6717cdd74a8d6dd8f3
+              body: >
+                The private keys of eight eMudhra intermediates are compromised
+
+                (CVE-2026-111943). They are revoked, but nothing in balenaOS
+                checks
+
+                revocation, so any client using the system bundle still accepts
+                them.
+
+
+                The intermediates chain to emSign ECC Root CA - G3 via a
+                cross-sign,
+
+                and to Comodo AAA Services root via a Sectigo cross-sign. Both
+                roots
+
+                are trusted in ca-certificates 20211016 (kirkstone). Only the
+                emSign
+
+                root is still trusted in 20260816 (scarthgap and later).
+
+
+                Delete both roots after do_compile so no bundle includes them.
+                That
+
+                covers native too, which the signing classes use to reach
+                SIGN_API.
+              footer:
+                See: https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/0R3XLJL6FuE
+                see: https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/0R3XLJL6FuE
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-9.0.2
+          title: ""
+          date: 2026-10-21T00:16:50.983Z
+        - commits:
+            - subject: "redsocks: Fix segfault on startup with 64-bit time_t"
+              hash: db149444a60ab040986264f1eee707ebb41298d7
+              body: >
+                Since Yocto 4.3, 32-bit ARM is built with 64-bit time_t, so the
+
+                "%lu"/"%ld" conversions used for struct timeval members shift
+                the
+
+                remaining arguments and crash on the first log message. Print
+                tv_sec as
+
+                (unsigned) long long with %llu/%lld and tv_usec as (unsigned)
+                long,
+
+                which is correct for both 32 and 64-bit time_t.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Changelog-entry: "redsocks: Fix segfault on startup with 64-bit time_t"
+                changelog-entry: "redsocks: Fix segfault on startup with 64-bit time_t"
+                Signed-off-by: guille-vega <guillermo.vega@balena.io>
+                signed-off-by: guille-vega <guillermo.vega@balena.io>
+              author: guille-vega
+              nested: []
+          version: meta-balena-9.0.1
+          title: ""
+          date: 2026-10-20T13:02:30.714Z
+        - commits:
+            - subject: "rollback-health: stop ordering after balena.service"
+              hash: be10fd3bf78176fee3c38ba45a790cd721411b61
+              body: >
+                Ordering after balena.service meant that if the engine is stuck
+                the
+
+                rollbacks won't run.
+
+
+                Removing the ordering fixes this with the caveat that the
+                rollback
+
+                starts counting from boot.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "kexec: strip every inherited balena_kernel_abi token"
+              hash: 0665c8010eb4aadc5f8d9a01de92dab61c2bbc3c
+              body: >
+                The sed had no g flag, so only the first balena_kernel_abi token
+                was
+
+                removed from the inherited command line. Stage 2 appends a fresh
+                value
+
+                only when it selects an override, so on a stock boot a leftover
+                token
+
+                reached the next kernel.
+
+
+                Fix even if nobody can exploit this today as the stage 1 command
+                line is signed,
+
+                and the LUKS grub template loads only bootcount, resin_root_part
+                and
+
+                upgrade_available from the unauthenticated block.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "initrdscripts: reject a malformed kernel override ABI"
+              hash: 9bbcfacaacd50c1e4ae02e23fe5d1964f3b90a7c
+              body: >
+                Accept only a 64-digit sha256 as a kernel override and fall back
+                to the
+
+                stock kernel for anything else.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: balena-extension-runtime to v2.0.1
+              hash: 34d6f7dc881cfb9e1d6416c46a6975159ad7d7be
+              body: |
+                Update from v1.2.1 to v2.0.1
+              footer:
+                Change-type: major
+                change-type: major
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: Update mobynit to v1.2.0
+              hash: e7aceecd3e0ca4cb9ffb654cbfdba970b40f9e84
+              body: |
+                Update from v1.1.0 to v 1.2.0
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "docs: add host extensions development"
+              hash: 2fca3fb2f24d141168737959c85147f53488833c
+              body: >
+                Add a developer guide to creating extensions using the in-tree
+                examples
+
+                and the raspberrypi device repo as reference.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "kernel-override-hooks: move activation into the extension runtime"
+              hash: facea21eb70aaf859f4554f0fd147680879b2817
+              body: >
+                The runtime arms the override and judges it, so the create,
+                start and
+
+                deactivate hooks, and the bootenv and extension helpers they
+                shared,
+
+                have no callers left.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "kexec: do not boot an override no extension claims"
+              hash: 6711055b1206cb00f12343b090df89070e3ffb71
+              body: >
+                Refuse an override whose deployed extension is missing. A
+                pending purge
+
+                answers the same way: the data partition is about to be wiped,
+                so
+
+                mobynit reports no claims and this boot does not run a kernel
+                whose
+
+                module tree it is not going to mount.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "balena-rollback: validate a kernel override armed by an extension"
+              hash: 42fafe76ab87597577eff7da53375ed155ef4569
+              body: >
+                An override can be armed with no host OS update in progress, so
+                nothing
+
+                runs the healthchecks that would catch it bricking the device.
+
+                extension-rollback.service runs balena-extension-manager
+                validate on
+
+                every boot: it stands aside while a HUP is in flight, then
+                settles, runs
+
+                the healthchecks and either commits the ABI for the running slot
+                or
+
+                rejects it.
+
+
+                Inside a HUP the verdict stays rollback-health's, delegated to
+                the same
+
+                binary through hup commit and hup reject. Neither call can stop
+                the
+
+                update, so a failure only warns.
+
+
+                The unit also sets TimeoutStartSec=20min. The value sits above
+                the bound
+
+                that the retry options already set, so systemd cannot cut short
+                a
+
+                legitimate schedule. Without the timeout a hang stays silent,
+                with no
+
+                verdict and no failure.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "balena-rollback: record the ABI a rollback rejected"
+              hash: 18aaf438218358eb8669e2d6c3cf396a6b25bdef
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "os-helpers-bootenv: withdraw a committed override from every slot"
+              hash: f54ae0c2c992d55f05f6d6e886ba36cd212b1a0f
+              body: >
+                The committed override snapshot is what a rollback restores, so
+                it must
+
+                stop naming an ABI whose extension is gone; otherwise a later
+                restore
+
+                re-arms an override that can no longer be resolved.
+
+
+                bootenv_withdraw_committed_override forgets one slot's snapshot,
+                and only
+
+                when that snapshot names the ABI being withdrawn: a different
+                override
+
+                the slot has already proven healthy is left alone.
+
+                bootenv_withdraw_committed_override_all applies it to every
+                slot, because
+
+                the extension deployment those snapshots point at is shared by
+                both.
+
+
+                bootenv_commit_override now records the kernel this boot is
+                running, read
+
+                from the kernel command line, rather than the live bootenv
+                value. The two
+
+                disagree between arming an override and rebooting into it, and
+                only the
+
+                running kernel is the one the slot has validated.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "balena: order the engine after the boot partition mounts"
+              hash: 3ced96bcedfd5686a90025a14706560171299fab
+              body: >
+                Activating a kernel override writes the boot environment, and
+                the
+
+                extension runtime fails the start when the boot partition is not
+                mounted.
+
+
+                The non-encrypted boot unit is installed under
+                BALENA_NONENC_BOOT_LABEL
+
+                and only on signed builds, so its name comes from a
+                substitution. It
+
+                expands to nothing elsewhere, where resin-boot is that mount.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "balena-rollback: write the boot environment through os-helpers"
+              hash: 3436427018a6db73d8691fb5c5b7ed9b41803136
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "hostapp-update-hooks: write the bootenv through os-helpers"
+              hash: 36239616699b686642f58699528ca64f0b1b0911
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "os-helpers-bootloader-config: write the bootenv in place"
+              hash: d6778514ecfffeb5c76683523e64578b43cf009e
+              body: >
+                Replacing the file swaps the inode out from under the lock a
+                concurrent
+
+                writer holds on the block, so that writer's update lands in a
+                file
+
+                nothing will read again. Edit the block in place for the
+                bootenv, and
+
+                depend on os-helpers-bootenv for the helpers that do it.
+
+
+                The other bootloader files keep the copy-and-move path: nothing
+                else
+
+                shares them with a writer outside this script.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "os-helpers-bootenv: serialise the block writers on a lock"
+              hash: 702bb19e8b9f68741c7c0c33138bbb7edd8e3e1e
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "hostapp-update-hooks: do not let one commit hook cancel the rest"
+              hash: 3a07bd93aa1676ccb6c8e0aab0fb0dab9ae6b209
+              body: >
+                The forward-commit loop ran under set -e semantics through
+                run_hook, so
+
+                the first hook to fail ended the loop and every hook sorting
+                after it
+
+                never ran.
+
+
+                Commit hooks run after the point of no return and are
+                independent
+
+                cleanup: there is nothing to abort and nothing to roll back, so
+                a
+
+                failure is worth a warning and nothing more.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "balena-tracing-extension: add tracing extension"
+              hash: a2b46caa83fcaa6534050ac31fe3ec9c9fef2311
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "balena-ebpf-extension: add recipe for ebpf hostapp extension"
+              hash: f8b99c255fbf0703736f12937ed801eaa2042ae2
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "classes: add shared hostapp extensions support"
+              hash: f587ed950b010cdf8a41bc1a0934997f2f3a9103
+              body: >
+                kernel.bbclass derives KERNEL_DEPLOYSUBDIR from
+                KERNEL_PACKAGE_NAME, so an
+
+                extension kernel deploys its images into a subdirectory. The
+                signing classes
+
+                install to the top of the deploy directory. The base kernel
+                already wrote the
+
+                same basenames there.
+
+
+                sign-gpg now installs to DESTDIR, as sign-efi already does.
+                DESTDIR defaults
+
+                to DEPLOYDIR and kernel-extension points it at its own
+                subdirectory.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-9.0.0
+          title: ""
+          date: 2026-10-16T13:29:08.576Z
+        - commits:
+            - subject: "classes/balena-bootloader: Don't include SDMA driver"
+              hash: 79bd493aa399cbdeb99c8000b1f8466ec6f4bf0a
+              body: |
+                ... because this causes uart transfers to fail on
+                the iot-gate-imx8plus devices after kexec. We thus
+                leave loading of this module to the kernel.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-8.0.15
+          title: ""
+          date: 2026-10-15T09:08:13.459Z
+        - commits:
+            - subject: "os-extra-firmware.service: use bash instead of sh"
+              hash: b863800280e307f9c123713d3a35e91417e99568
+              body: >
+                Specify bash instead of sh to avoid running bash in shell
+                compatibility mode, as
+
+                some helper functions contain unsupported bashisms.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: guille-vega <guillermo.vega@balena.io>
+                signed-off-by: guille-vega <guillermo.vega@balena.io>
+              author: guille-vega
+              nested: []
+          version: meta-balena-8.0.14
+          title: ""
+          date: 2026-10-01T10:53:34.643Z
+        - commits:
+            - subject: "renovate: Use minor change-type for supervisor major updates"
+              hash: 9e95295bd25cc296dfb33775e777ab84984db01f
+              body: >
+                The supervisor is an OS interface, so a breaking supervisor
+                release
+
+                should bump the OS minor version rather than patch.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-8.0.13
+          title: ""
+          date: 2026-09-25T14:34:45.602Z
+        - commits:
+            - subject: "kernel-balena.bbclass: Add aufs patches for 6.18 kernels"
+              hash: 3988f3f5073d2db5ffa9e84c2767061655836e84
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-8.0.12
+          title: ""
+          date: 2026-09-23T15:36:16.716Z
+        - commits:
+            - subject: Update tests/leviathan digest to bac9173
+              hash: fea14a2f8ca70d46bf1f50a5b12d343357a4f36d
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: "core/contracts: Update to v2.0.150"
+                      hash: 18fd631e06246b8194fc5af204094aea3d9a6c19
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                        signed-off-by: Alexandru Costache <alexandru@balena.io>
+                      author: Alexandru Costache
+                      nested: []
+                  version: leviathan-2.36.133
+                  title: ""
+                  date: 2026-09-22T06:46:24.856Z
+          version: meta-balena-8.0.11
+          title: ""
+          date: 2026-09-22T15:05:20.715Z
+        - commits:
+            - subject: Update tests/leviathan digest to 466e576
+              hash: 202b6b05fa009aec7c61883c419d94f7d72aa8bd
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update Node.js
+                      hash: 17b2e1ed1544c90d8d63d97c8ff0edef7474a9c7
+                      body: |
+                        Update node from 22.14.0 to 22.23.2
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.132
+                  title: ""
+                  date: 2026-09-02T20:19:30.667Z
+          version: meta-balena-8.0.10
+          title: ""
+          date: 2026-09-11T10:47:29.394Z
+  version: 9.0.7
+  title: ""
+  date: 2026-11-12T18:30:14.930Z
+- commits:
     - subject: ".gitmodules: Declare a branch for every submodule"
       hash: a9da6d3d41c8d152c80c575328dbcf5cb7a68af7
       body: |
