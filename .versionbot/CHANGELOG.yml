@@ -1,4 +1,19 @@
 - commits:
+    - subject: "recipes-kernel: apply CVE-2026-98432 patch"
+      hash: 1013383137b5d37de9e02f66a619018833372c4e
+      body: |
+        To mitigate CVE-2026-98432
+      footer:
+        Changelog-entry: "recipes-kernel: apply CVE-2026-98432 patch"
+        changelog-entry: "recipes-kernel: apply CVE-2026-98432 patch"
+        Signed-off-by: Ryan Cooke<ryan@balena.io>
+        signed-off-by: Ryan Cooke<ryan@balena.io>
+      author: Ryan Cooke
+      nested: []
+  version: 9.0.7+rev1
+  title: ""
+  date: 2026-11-13T16:20:45.797Z
+- commits:
     - subject: Update layers/meta-balena to 61d294761aaafe47398d4a4be5001577c29e2ac2
       hash: 57c5c24b5906ce58d3c90bf97e6819112b38bb52
       body: Update layers/meta-balena
