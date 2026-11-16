@@ -1,6 +1,41 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v9.0.7+rev2
+## (2026-11-16)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 6396c352087dfb8e51878aac70a59b5806eafebf [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.42.18
+> ### (2026-11-13)
+> 
+> * build/barys: Follow symlinks when looking for conf sample files [Florin Sarbu]
+> 
+> ## balena-yocto-scripts-1.42.17
+> ### (2026-10-13)
+> 
+> * hostapp-composition(overlays): extend schema to check for runtime [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.42.16
+> ### (2026-10-02)
+> 
+> * Update ubuntu:22.04 Docker digest to b8b6ee6 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.42.15
+> ### (2026-09-15)
+> 
+> * Update actions/download-artifact action to v8 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.42.14
+> ### (2026-09-14)
+> 
+> * Fix ESR tagging step [Ryan Cooke]
+> 
+
+</details>
+
 # v9.0.7+rev1
 ## (2026-11-13)
 
