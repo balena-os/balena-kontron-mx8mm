@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update balena-os/github-workflows to
+        75f1aaba4ccc7f4b0370c16a779a7113cc2bc596
+      hash: a11486234a80306f81003d76d9f245f41b29cbf2
+      body: Update balena-os/github-workflows
+      footer:
+        Changelog-entry: Update balena-os/github-workflows to
+          75f1aaba4ccc7f4b0370c16a779a7113cc2bc596
+        changelog-entry: Update balena-os/github-workflows to
+          75f1aaba4ccc7f4b0370c16a779a7113cc2bc596
+      author: balena-renovate[bot]
+      nested: []
+  version: 9.0.7+rev4
+  title: ""
+  date: 2026-11-17T00:05:12.763Z
+- commits:
     - subject: Update layers/meta-freescale to abc1eb8d4c792b64af590424574cbe91098f622e
       hash: 9a111f50e138a7730bd7326d0217b5eabd035607
       body: Update layers/meta-freescale
