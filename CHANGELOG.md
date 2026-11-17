@@ -1,6 +1,27 @@
 # v2.105.10
 ## (2022-10-13)
 
+# v9.0.7+rev5
+## (2026-11-17)
+
+
+<details>
+<summary> Update contracts to 17d87d30099bcc7bbd457488c19e626dd658ac97 [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.151
+> ### (2026-11-03)
+> 
+> * hw.device-type: Add new device-type - Compulab IOT-GATE-RPI5 [Alexandru Costache]
+> 
+> ## contracts-2.0.150
+> ### (2026-09-16)
+> 
+> * edgeai-orn-nx: Add contract for new public device-type [Alexandru Costache]
+> * hw.device-type: Re-word provisioning instructions for Orin and Thor boards [Alexandru Costache]
+> 
+
+</details>
+
 # v9.0.7+rev4
 ## (2026-11-17)
 
